@@ -45,8 +45,8 @@ keymap("", "<C-s>", ":w<CR>", bind_opts)
 keymap("n", "<leader>x", ":bd<CR>", bind_opts)
 
 -- Copy paste
-keymap("", "<C-S-v>", '"+p', bind_opts)
-keymap("", "<C-S-c>", '"+y', bind_opts)
+keymap("", "<C-p>", '"+p', bind_opts)
+keymap("", "<C-y>", '"+y', bind_opts)
 
 -- Fzf stuff
 keymap("n", "<leader>ff", ':Files<CR>', bind_opts)
