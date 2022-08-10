@@ -45,12 +45,16 @@ keymap("", "<C-s>", ":w<CR>", bind_opts)
 keymap("n", "<leader>x", ":bd<CR>", bind_opts)
 
 -- Copy paste
-keymap("n", "<leader>p", '"+p', bind_opts)
-keymap("n", "<leader>P", '"+P', bind_opts)
-keymap("v", "<leader>y", '"+y', bind_opts)
-keymap("v", "<leader>Y", '"+Y', bind_opts)
+keymap("", "<C-S-v>", '"+p', bind_opts)
+keymap("", "<C-S-c>", '"+y', bind_opts)
 
 -- Fzf stuff
 keymap("n", "<leader>ff", ':Files<CR>', bind_opts)
 keymap("n", "<leader>fg", ':GFiles<CR>', bind_opts)
-keymap("n", "<leader>bs", ':Buffers<CR>', bind_opts)
+keymap("n", "<leader>ss", ':Buffers<CR>', bind_opts)
+
+-- Window movement
+keymap("n", "<leader>h", ":wincmd h<CR>", bind_opts)
+keymap("n", "<leader>j", ":wincmd j<CR>", bind_opts)
+keymap("n", "<leader>k", ":wincmd k<CR>", bind_opts)
+keymap("n", "<leader>l", ":wincmd l<CR>", bind_opts)
