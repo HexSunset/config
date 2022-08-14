@@ -14,3 +14,6 @@ xorg-xinput
 dbus-python
 pipewire
 pipewire-pulse
+bat
+ripgrep
+fzf
