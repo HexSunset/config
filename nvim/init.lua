@@ -24,15 +24,13 @@ global.title = true
 global.wildmenu = true
 cmd("set completeopt=menu,menuone,noselect")
 
+cmd("colorscheme gruvbox-material")
+
 
 -------------
 -- PLUGINS --
 -------------
 require('plugins')
-
--- Colorscheme
-cmd("colorscheme gruvbox-material")
-
 
 --------------
 -- KEYBINDS --
@@ -83,3 +81,6 @@ keymap("t", "<Esc>", "<C-\\><C-n>", bind_opts)
 
 -- Window movement
 keymap("n", ";", "<C-w>", bind_opts)
+
+-- Update
+keymap("n", "<leader>U", ":PackerSync<CR>", bind_opts)
