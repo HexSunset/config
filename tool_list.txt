@@ -1,0 +1,16 @@
+brightnessctl
+rofi
+nvim
+polybar
+playerctl
+picom
+wired
+ssh
+paru
+i3-scrot
+terminus-font
+ttf-fira-code
+xorg-xinput
+dbus-python
+pipewire
+pipewire-pulse
