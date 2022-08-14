@@ -52,9 +52,3 @@ keymap("", "<C-y>", '"+y', bind_opts)
 keymap("n", "<leader>ff", ':Files<CR>', bind_opts)
 keymap("n", "<leader>fg", ':GFiles<CR>', bind_opts)
 keymap("n", "<leader>ss", ':Buffers<CR>', bind_opts)
-
--- Window movement
-keymap("n", "<leader>h", ":wincmd h<CR>", bind_opts)
-keymap("n", "<leader>j", ":wincmd j<CR>", bind_opts)
-keymap("n", "<leader>k", ":wincmd k<CR>", bind_opts)
-keymap("n", "<leader>l", ":wincmd l<CR>", bind_opts)
