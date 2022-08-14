@@ -18,6 +18,8 @@ require('packer').startup(function(use)
     use 'preservim/nerdtree'
 
     use 'tpope/vim-fugitive'
+    
+    use 'machakann/vim-sandwich'
 
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
