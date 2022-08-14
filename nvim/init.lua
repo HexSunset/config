@@ -41,7 +41,8 @@ local bind_opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- Config
-keymap("n", "<leader>oc", ":cd ~/.config/nvim/<CR>:Files<CR>", bind_opts)
+keymap("n", "<leader>oc", ":Files ~/.config/nvim/<CR>", bind_opts)
+keymap("n", "<leader>rc", ":source ~/.config/nvim/init.lua<CR>", bind_opts)
 
 -- Saving
 keymap("", "<C-s>", ":w<CR>", bind_opts)
@@ -61,6 +62,11 @@ keymap("n", "<leader>fg", ':GFiles<CR>', bind_opts)
 keymap("n", "<leader>ss", ':Buffers<CR>', bind_opts)
 
 -- Movement
+keymap("n", "J", "10j", bind_opts)
+keymap("n", "K", "10k", bind_opts)
+keymap("n", "H", "10h", bind_opts)
+keymap("n", "L", "10l", bind_opts)
+
 keymap("n", "gk", 'gg<CR>', bind_opts)
 keymap("n", "gj", 'G<CR>', bind_opts)
 keymap("n", "gh", '0<CR>', bind_opts)
@@ -72,3 +78,9 @@ keymap("v", "gj", 'G<CR>', bind_opts)
 keymap("v", "gh", '0<CR>', bind_opts)
 keymap("v", "gl", '$<CR>', bind_opts)
 keymap("v", "gs", '^<CR>', bind_opts)
+
+-- Terminal
+keymap("n", "<leader>tn", ":e term://fish<CR>", bind_opts)
+keymap("n", "<leader>tv", ":vsplit term://fish<CR>", bind_opts)
+
+keymap("t", "<Esc>", "<C-\\><C-n>", bind_opts)
