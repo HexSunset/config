@@ -82,5 +82,9 @@ keymap("v", "gs", '^', bind_opts)
 -- Terminal
 keymap("n", "<leader>tn", ":e term://fish<CR>", bind_opts)
 keymap("n", "<leader>tv", ":vsplit term://fish<CR>", bind_opts)
+keymap("n", "<leader>ts", ":split term://fish<CR>", bind_opts)
 
 keymap("t", "<Esc>", "<C-\\><C-n>", bind_opts)
+
+-- Window movement
+keymap("n", ";", "<C-w>", bind_opts)
