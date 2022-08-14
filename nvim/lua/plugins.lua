@@ -9,6 +9,8 @@ require('packer').startup(function(use)
 	-- Manage itself :]
 	use 'wbthomason/packer.nvim'
 
+    use 'nvim-lua/plenary.nvim'
+
 	use 'sainnhe/gruvbox-material'
 
 	use 'jiangmiao/auto-pairs'
@@ -18,8 +20,11 @@ require('packer').startup(function(use)
     use 'preservim/nerdtree'
 
     use 'tpope/vim-fugitive'
+    use 'airblade/vim-gitgutter'
     
     use 'machakann/vim-sandwich'
+
+    use 'tjdevries/express_line.nvim'
 
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'

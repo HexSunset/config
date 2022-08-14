@@ -46,6 +46,7 @@ keymap("n", "<leader>rc", ":source ~/.config/nvim/init.lua<CR>", bind_opts)
 
 -- Saving
 keymap("", "<C-s>", ":w<CR>", bind_opts)
+keymap("i", "<C-s>", ":w<CR>", bind_opts)
 keymap("n", "<leader>x", ":bd<CR>", bind_opts)
 
 -- Copy paste
@@ -62,22 +63,16 @@ keymap("n", "<leader>fg", ':GFiles<CR>', bind_opts)
 keymap("n", "<leader>ss", ':Buffers<CR>', bind_opts)
 
 -- Movement
-keymap("n", "J", "10j", bind_opts)
-keymap("n", "K", "10k", bind_opts)
-keymap("n", "H", "10h", bind_opts)
-keymap("n", "L", "10l", bind_opts)
+keymap("", "J", "10j", bind_opts)
+keymap("", "K", "10k", bind_opts)
+keymap("", "H", "10h", bind_opts)
+keymap("", "L", "10l", bind_opts)
 
-keymap("n", "gk", 'gg', bind_opts)
-keymap("n", "gj", 'G', bind_opts)
-keymap("n", "gh", '0', bind_opts)
-keymap("n", "gl", '$', bind_opts)
-keymap("n", "gs", '^', bind_opts)
-
-keymap("v", "gk", 'gg', bind_opts)
-keymap("v", "gj", 'G', bind_opts)
-keymap("v", "gh", '0', bind_opts)
-keymap("v", "gl", '$', bind_opts)
-keymap("v", "gs", '^', bind_opts)
+keymap("", "gk", 'gg', bind_opts)
+keymap("", "gj", 'G', bind_opts)
+keymap("", "gh", '0', bind_opts)
+keymap("", "gl", '$', bind_opts)
+keymap("", "gs", '^', bind_opts)
 
 -- Terminal
 keymap("n", "<leader>tn", ":e term://fish<CR>", bind_opts)
