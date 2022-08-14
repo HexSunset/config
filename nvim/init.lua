@@ -24,13 +24,14 @@ global.title = true
 global.wildmenu = true
 cmd("set completeopt=menu,menuone,noselect")
 
-cmd("colorscheme gruvbox-material")
 
 
 -------------
 -- PLUGINS --
 -------------
 require('plugins')
+
+cmd("colorscheme gruvbox-material")
 
 --------------
 -- KEYBINDS --
