@@ -24,7 +24,7 @@ require('packer').startup(function(use)
     
     use 'machakann/vim-sandwich'
 
-    use 'tjdevries/express_line.nvim'
+    use 'nvim-lualine/lualine.nvim'
 
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
@@ -42,3 +42,12 @@ end)
 -- NVIM-CMP --
 --------------
 require('cmp-setup') -- Separate file because damn that shit messy
+
+-------------
+-- LUALINE --
+-------------
+require('lualine').setup {
+    options = {
+        theme = 'gruvbox-material'
+    }
+}
