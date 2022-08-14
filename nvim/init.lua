@@ -55,6 +55,8 @@ keymap("v", "<C-y>", '"+y', bind_opts)
 keymap("n", "<leader>fp", ':Files<CR>', bind_opts)
 keymap("n", "<leader>fh", ':History<CR>', bind_opts)
 keymap("n", "<leader>rg", ':Rg<CR>', bind_opts)
+keymap("n", "<leader>rl", ':Lines<CR>', bind_opts)
+keymap("n", "<leader>rb", ':BLines<CR>', bind_opts)
 keymap("n", "<leader>fg", ':GFiles<CR>', bind_opts)
 keymap("n", "<leader>ss", ':Buffers<CR>', bind_opts)
 
