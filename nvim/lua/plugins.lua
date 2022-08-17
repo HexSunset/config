@@ -21,6 +21,8 @@ require('packer').startup(function(use)
 
     use 'tpope/vim-fugitive'
     use 'airblade/vim-gitgutter'
+
+    use 'ryanoasis/vim-devicons'
     
     use 'machakann/vim-sandwich'
 
