@@ -64,8 +64,8 @@ keymap("n", "<leader>ss", ':Buffers<CR>', bind_opts)
 -- Movement
 keymap("", "J", "10j", bind_opts)
 keymap("", "K", "10k", bind_opts)
-keymap("", "H", "10h", bind_opts)
-keymap("", "L", "10l", bind_opts)
+keymap("", "H", "2b", bind_opts)
+keymap("", "L", "2w", bind_opts)
 
 keymap("", "gk", 'gg', bind_opts)
 keymap("", "gj", 'G', bind_opts)
@@ -74,10 +74,7 @@ keymap("", "gl", '$', bind_opts)
 keymap("", "gs", '^', bind_opts)
 
 -- Terminal
-keymap("n", "<leader>tn", ":e term://fish<CR>", bind_opts)
-keymap("n", "<leader>tv", ":vsplit term://fish<CR>", bind_opts)
-keymap("n", "<leader>ts", ":split term://fish<CR>", bind_opts)
-
+keymap("n", "<leader>tc", ":terminal<CR>", bind_opts)
 keymap("t", "<Esc>", "<C-\\><C-n>", bind_opts)
 
 -- Window movement
