@@ -40,7 +40,7 @@ local bind_opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- Config
-keymap("n", "<leader>oc", ":GFiles ~/.config/nvim/<CR>", bind_opts)
+keymap("n", "<leader>oc", ":Files ~/.config/nvim/<CR>", bind_opts)
 keymap("n", "<leader>rc", ":source ~/.config/nvim/init.lua<CR>", bind_opts)
 
 -- Saving
