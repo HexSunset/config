@@ -26,6 +26,8 @@ require('packer').startup(function(use)
     
     use 'machakann/vim-sandwich'
 
+    use 'psliwka/vim-smoothie'
+
     use 'nvim-lualine/lualine.nvim'
 
     use 'neovim/nvim-lspconfig'
