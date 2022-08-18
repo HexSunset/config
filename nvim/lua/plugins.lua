@@ -11,6 +11,11 @@ require('packer').startup(function(use)
 
     use 'nvim-lua/plenary.nvim'
 
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
 	use 'sainnhe/gruvbox-material'
 
 	use 'jiangmiao/auto-pairs'

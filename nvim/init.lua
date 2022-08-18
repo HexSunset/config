@@ -23,7 +23,7 @@ editor.hidden = true
 editor.title = true
 
 editor.wildmenu = true
-cmd("set completeopt=menu,menuone,noselect")
+cmd("set completeopt=menu,menuone,noselect,preview")
 
 
 -------------
@@ -65,8 +65,8 @@ keymap("n", "<leader>ss", ':Buffers<CR>', bind_opts)
 -- Movement
 keymap("", "J", "10j", bind_opts)
 keymap("", "K", "10k", bind_opts)
-keymap("", "H", "2b", bind_opts)
-keymap("", "L", "2w", bind_opts)
+keymap("", "H", "2B", bind_opts)
+keymap("", "L", "2W", bind_opts)
 
 keymap("", "gk", 'gg', bind_opts)
 keymap("", "gj", 'G', bind_opts)
