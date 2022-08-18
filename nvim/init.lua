@@ -1,29 +1,29 @@
 ------------
 -- EDITOR --
 ------------
-local global = vim.o
+local editor = vim.o
+local global = vim.g
 local cmd = vim.cmd
 
-vim.g.mapleader = " "
+global.mapleader = " "
 
-global.number = true
-global.relativenumber = true
-global.cursorline = true
+editor.number = true
+editor.relativenumber = true
+editor.cursorline = true
 
-global.background = 'dark'
+editor.background = 'dark'
 
-global.expandtab = true
-global.tabstop = 4
-global.shiftwidth = 4
+editor.expandtab = true
+editor.tabstop = 4
+editor.shiftwidth = 4
 
-global.mouse = 'a'
+editor.mouse = 'a'
 
-global.hidden = true
-global.title = true
+editor.hidden = true
+editor.title = true
 
-global.wildmenu = true
+editor.wildmenu = true
 cmd("set completeopt=menu,menuone,noselect")
-
 
 
 -------------
@@ -32,6 +32,7 @@ cmd("set completeopt=menu,menuone,noselect")
 require('plugins')
 
 cmd("colorscheme gruvbox-material")
+
 
 --------------
 -- KEYBINDS --
@@ -74,7 +75,7 @@ keymap("", "gl", '$', bind_opts)
 keymap("", "gs", '^', bind_opts)
 
 -- Terminal
-keymap("n", "<leader>tc", ":terminal<CR>", bind_opts)
+keymap("n", "<leader>tt", ":terminal<CR>", bind_opts)
 keymap("t", "<Esc>", "<C-\\><C-n>", bind_opts)
 
 -- Window movement
