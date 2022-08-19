@@ -10,6 +10,7 @@ require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
     use 'nvim-lua/plenary.nvim'
+    use 'mfussenegger/nvim-dap'
 
     use({
         "iamcco/markdown-preview.nvim",
@@ -56,7 +57,7 @@ end)
 ---------------
 -- LSPCONFIG --
 ---------------
--- require('lspconf')
+require('lspconf')
 
 
 --------------
