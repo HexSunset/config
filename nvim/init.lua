@@ -77,6 +77,8 @@ keymap("", "gh", '0', bind_opts)
 keymap("", "gl", '$', bind_opts)
 keymap("", "gs", '^', bind_opts)
 
+keymap("", "gm", '%', bind_opts)
+
 -- Terminal
 keymap("n", "<leader>tt", ":terminal<CR>", bind_opts)
 keymap("t", "<Esc>", "<C-\\><C-n>", bind_opts)
