@@ -17,7 +17,7 @@ rt.setup({
         end,
         ["rust-analyzer"] = {
             checkOnSave = {
-                command = "clippy"
+                command = ""
             },
         },
     },
