@@ -10,3 +10,5 @@ rt.setup({
     end,
     },
 })
+
+rt.inlay_hints.disable()

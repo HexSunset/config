@@ -88,3 +88,8 @@ keymap("n", ";", "<C-w>", bind_opts)
 
 -- Update
 keymap("n", "<leader>U", ":PackerSync<CR>", bind_opts)
+
+-- rust-tools
+local rt = require("rust-tools")
+keymap("n", "<leader>rhs", "lua rt.inlay_hints.set()<CR>", bind_opts)
+keymap("n", "<leader>rhu", "lua rt.inlay_hints.unset()<CR>", bind_opts)
