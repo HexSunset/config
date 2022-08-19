@@ -44,6 +44,9 @@ local keymap = vim.api.nvim_set_keymap
 keymap("n", "<leader>oc", ":Files ~/.config/nvim/<CR>", bind_opts)
 keymap("n", "<leader>rc", ":source ~/.config/nvim/init.lua<CR>", bind_opts)
 
+-- Gitgutter toggle
+keymap("n", "<leader>gg", ":GitGutterToggle<CR>", bind_opts)
+
 -- Saving
 keymap("", "<C-s>", ":w<CR>", bind_opts)
 keymap("i", "<C-s>", ":w<CR>", bind_opts)
