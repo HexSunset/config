@@ -42,7 +42,7 @@ local keymap = vim.api.nvim_set_keymap
 
 -- Config
 keymap("n", "<leader>oc", ":Files ~/.config/nvim/<CR>", bind_opts)
-keymap("n", "<leader>rc", ":source ~/.config/nvim/init.lua<CR>", bind_opts)
+keymap("n", "<leader>lc", ":source ~/.config/nvim/init.lua<CR>", bind_opts)
 
 -- Gitgutter toggle
 keymap("n", "<leader>gg", ":GitGutterToggle<CR>", bind_opts)
@@ -91,5 +91,8 @@ keymap("n", "<leader>U", ":PackerSync<CR>", bind_opts)
 
 -- rust-tools
 local rt = require("rust-tools")
+
 keymap("n", "<leader>rhs", "lua rt.inlay_hints.set()<CR>", bind_opts)
 keymap("n", "<leader>rhu", "lua rt.inlay_hints.unset()<CR>", bind_opts)
+
+keymap("n", "<leader>rr", "lua rt.runnables.runnables()<CR>", bind_opts)
