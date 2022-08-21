@@ -1,6 +1,8 @@
 if status is-interactive
     set fish_greeting
     set -gx EDITOR nvim
+    set -gx PAGER bat
+
     alias r "rm -f"
     alias rr "rm -rf"
 
