@@ -31,7 +31,7 @@ cmd("set completeopt=menu,menuone,noselect,preview")
 -------------
 require('plugins')
 
-cmd("colorscheme gruvbox-material")
+cmd(":Catppuccin macchiato")
 
 
 --------------

@@ -18,6 +18,7 @@ require('packer').startup(function(use)
     })
 
 	use 'sainnhe/gruvbox-material'
+    use { "catppuccin/nvim", as = "catppuccin" }
 
 	use 'jiangmiao/auto-pairs'
 
@@ -53,6 +54,11 @@ require('packer').startup(function(use)
     use 'preservim/vim-markdown'
 end)
 
+----------------
+-- CATPPUCCIN --
+----------------
+require("catppuccin").setup()
+
 
 ---------------
 -- LSPCONFIG --
@@ -71,6 +77,6 @@ require('cmp-setup') -- Separate file because damn that shit messy
 -------------
 require('lualine').setup {
     options = {
-        theme = 'gruvbox-material'
+        theme = 'catppuccin'
     }
 }
