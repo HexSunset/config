@@ -22,6 +22,7 @@
 !kitty/
 !kitty/*
 !kitty/kitty.conf
+!kitty/current-theme.conf
 !kitty/themes/*
 !kitty/themes/gruvbox.conf
 !kitty/themes/macchiato.conf
