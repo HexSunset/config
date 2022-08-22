@@ -73,9 +73,6 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec kitty
 
-# start text editor
-bindsym --release $mod+n exec neovide
-
 # start browser
 bindsym $mod+b exec firefox
 bindsym $mod+Shift+b exec tor-browser

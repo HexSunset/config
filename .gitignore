@@ -15,6 +15,10 @@
 !fish/config.fish
 !fish/fish_variables
 
+!i3/
+!i3/*
+!i3/config
+
 !kitty/
 !kitty/*
 !kitty/kitty.conf
