@@ -2,6 +2,7 @@
 
 !.gitignore
 
+!nvim/
 !nvim/*
 !nvim/init.lua
 !nvim/lua/*
@@ -9,10 +10,12 @@
 !nvim/lua/lspconf.lua
 !nvim/lua/plugins.lua
 
+!fish/
 !fish/*
 !fish/config.fish
 !fish/fish_variables
 
+!kitty/
 !kitty/*
 !kitty/kitty.conf
 !kitty/themes/*
@@ -20,11 +23,13 @@
 !kitty/themes/macchiato.conf
 !kitty/themes/mocha.conf
 
+!polybar/
 !polybar/*
 !polybar/config.ini
 !polybar/launch.sh
 !polybar/spotify.py
 
+!rofi/
 !rofi/*
 !rofi/catppuccin-mocha.rasi
 !rofi/config.rasi
