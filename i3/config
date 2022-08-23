@@ -151,10 +151,11 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-workspace "1: code" output primary
-workspace "2: web" output secondary
-workspace "3: communication" output secondary
-workspace "4: music" output secondary
+workspace $ws1 output primary
+workspace $ws2 output DVI-D-0
+workspace $ws3 output DVI-D-0
+workspace $ws4 output DVI-D-0
+workspace $ws5 output primary
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
