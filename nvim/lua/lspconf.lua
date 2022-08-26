@@ -11,7 +11,7 @@ rt.setup({
         settings = {
             ["rust-analyzer"] = {
                 checkOnSave = {
-                    enable = false,
+                    enable = true,
                 },
             },
         },
