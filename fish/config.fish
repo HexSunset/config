@@ -6,6 +6,7 @@ if status is-interactive
     alias r "rm -f"
     alias rr "rm -rf"
 
+    alias l  "exa"
     alias ls "exa"
     alias ll "exa -l"
     alias la "exa -la"
