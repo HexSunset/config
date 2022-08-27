@@ -6,7 +6,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 require('packer').startup(function(use)
-	-- Manage itself :]
+	-- Manage itself :)
 	use 'wbthomason/packer.nvim'
 
     use 'nvim-lua/plenary.nvim'
@@ -29,8 +29,6 @@ require('packer').startup(function(use)
     use 'tpope/vim-fugitive'
     use 'airblade/vim-gitgutter'
 
-    use 'ryanoasis/vim-devicons'
-    
     use 'machakann/vim-sandwich'
 
     use 'psliwka/vim-smoothie'
@@ -38,17 +36,6 @@ require('packer').startup(function(use)
     use 'nvim-lualine/lualine.nvim'
 
     use 'neovim/nvim-lspconfig'
-
-    use 'hrsh7th/nvim-cmp'
-    use 'hrsh7th/cmp-nvim-lsp'
-    use 'hrsh7th/cmp-buffer'
-    use 'hrsh7th/cmp-path'
-    use 'hrsh7th/cmp-cmdline'
-
-    use 'hrsh7th/cmp-vsnip'
-    use 'hrsh7th/vim-vsnip'
-
-    use 'simrat39/rust-tools.nvim'
 
     use 'godlygeek/tabular'
     use 'preservim/vim-markdown'
@@ -58,18 +45,6 @@ end)
 -- CATPPUCCIN --
 ----------------
 require("catppuccin").setup()
-
-
----------------
--- LSPCONFIG --
----------------
-require('lspconf')
-
-
---------------
--- NVIM-CMP --
---------------
-require('cmp-setup') -- Separate file because damn that shit messy
 
 
 -------------

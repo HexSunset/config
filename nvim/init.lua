@@ -88,13 +88,3 @@ keymap("n", ";", "<C-w>", bind_opts)
 
 -- Update
 keymap("n", "<leader>U", ":PackerSync<CR>", bind_opts)
-
--- rust-tools
-local rt = require("rust-tools")
-
-keymap("n", "<leader>ra", ":RustHoverActions<CR>", bind_opts)
-
-keymap("n", "<leader>rhs", ":RustSetInlayHints<CR>", bind_opts)
-keymap("n", "<leader>rhu", ":RustUnsetInlayHints<CR>", bind_opts)
-
-keymap("n", "<leader>rr", ":RustRunnables<CR>", bind_opts)
