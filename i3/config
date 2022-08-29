@@ -73,6 +73,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec kitty
 
+# start a text editor
+bindsym $mod+t exec codium
+
 # start browser
 bindsym $mod+b exec firefox
 bindsym $mod+Shift+b exec tor-browser
