@@ -10,6 +10,10 @@
 !nvim/lua/lspconf.lua
 !nvim/lua/plugins.lua
 
+!helix/
+!helix/*
+!helix/config.toml
+
 !fish/
 !fish/*
 !fish/config.fish
