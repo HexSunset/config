@@ -10,4 +10,6 @@ if status is-interactive
     alias ls "exa"
     alias ll "exa -l"
     alias la "exa -la"
+    
+    alias hx "helix"
 end
