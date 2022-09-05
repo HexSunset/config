@@ -12,4 +12,8 @@ if status is-interactive
     alias la "exa -la"
     
     alias hx "helix"
+    alias se "sudoedit"
+
+    alias s "sudo"
+    alias pcs "pacman -S"
 end
