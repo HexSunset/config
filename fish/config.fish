@@ -1,6 +1,6 @@
 if status is-interactive
     set fish_greeting
-    set -gx EDITOR helix
+    set -gx EDITOR nvim
     set -gx PAGER bat -p
 
     alias r "rm -f"
@@ -12,4 +12,6 @@ if status is-interactive
     alias la "exa -la"
     
     alias hx "helix"
+
+    alias nv "neovim"
 end
