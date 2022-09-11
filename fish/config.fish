@@ -13,5 +13,5 @@ if status is-interactive
     
     alias hx "helix"
 
-    alias nv "neovim"
+    alias nv "nvim"
 end
