@@ -1,5 +1,7 @@
 require('plugins')
 require('settings')
+require('lsp-setup')
+require('keybinds')
 
 ----------
 -- LEAP --
