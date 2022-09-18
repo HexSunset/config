@@ -11,7 +11,6 @@ local servers = {
     'clangd',
     'rust_analyzer',
     'pyright',
-    --'tsserver',
 }
 
 for _, lsp in ipairs(servers) do
