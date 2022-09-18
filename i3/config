@@ -74,7 +74,7 @@ floating_modifier $mod
 bindsym $mod+Return exec kitty
 
 # start a text editor
-bindsym $mod+t exec codium
+bindsym $mod+t exec neovide
 
 # start browser
 bindsym $mod+b exec firefox
