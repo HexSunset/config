@@ -7,6 +7,7 @@ return require('packer').startup(function(use)
   use 'tpope/vim-surround'
   use 'junegunn/fzf.vim'
   use 'nvim-lua/plenary.nvim'
+  use "lukas-reineke/indent-blankline.nvim"
   use 'ggandor/leap.nvim'
   use {
     "windwp/nvim-autopairs",

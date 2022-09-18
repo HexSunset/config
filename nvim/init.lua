@@ -9,6 +9,12 @@ require('keybinds')
 require('leap').set_default_keymaps()
 
 
+----------------------
+-- INDENT-BLANKLINE --
+----------------------
+require('indent_blankline').setup{}
+
+
 --------------
 -- NVIM-CMP --
 --------------
