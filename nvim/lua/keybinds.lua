@@ -11,5 +11,9 @@ vim.keymap.set('n', '<leader>bl', ':Buffers<CR>', opts)
 vim.keymap.set('n', '<leader>ff', ':Files<CR>', opts)
 vim.keymap.set('n', '<leader>fg', ':GFiles<CR>', opts)
 
+-- Config
+vim.keymap.set('n', '<leader>cv', ':Files ~/.config/nvim/<CR>', opts) -- Vim config
+vim.keymap.set('n', '<leader>co', ':GFiles ~/.config/<CR>', opts)     -- All configs
+
 -- Update
 vim.keymap.set('n', '<leader>uu', ':PackerSync<CR>', opts)
