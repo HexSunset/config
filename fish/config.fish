@@ -14,4 +14,5 @@ if status is-interactive
     alias hx "helix"
 
     alias nv "nvim"
+    alias lg "lazygit"
 end
