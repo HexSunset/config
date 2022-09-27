@@ -1,7 +1,11 @@
 if status is-interactive
-    set fish_greeting
+    set fish_greeting "Ahoy, captain!"
     set -gx EDITOR nvim
-    set -gx PAGER bat -p
+
+    set -gx GTK_IM_MODULE fcitx
+    set -gx QT_IM_MODULE fcitx
+    set -gx XMODIFIERS fcitx
+    set -gx GLFW_IM_MODULE ibus
 
     alias r "rm -f"
     alias rr "rm -rf"
