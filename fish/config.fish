@@ -1,5 +1,8 @@
 if status is-interactive
     set fish_greeting "Ahoy, captain!"
+    fish_config prompt choose informative_vcs
+    fish_config theme choose Base16\ Default\ Dark
+
     set -gx EDITOR nvim
 
     set -gx GTK_IM_MODULE fcitx
