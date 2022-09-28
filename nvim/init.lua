@@ -1,35 +1,7 @@
 require('plugins')
+require('plugin-setup')
 require('settings')
 require('lsp-setup')
 require('keybinds')
 
-----------
--- LEAP --
-----------
-require('leap').set_default_keymaps()
 
-
-----------------------
--- INDENT-BLANKLINE --
-----------------------
-require('indent_blankline').setup{}
-
-
---------------
--- NVIM-CMP --
---------------
-require('cmp-setup')
-
-
-----------------
--- TREESITTER --
-----------------
-require('nvim-treesitter').setup()
-
-
------------
--- THEME --
------------
---vim.g.catppuccin_flavour = "macchiato" -- latte, frappe, macchiato, mocha
---require("catppuccin").setup()
-require("monokai").setup { palette = require("monokai").soda }

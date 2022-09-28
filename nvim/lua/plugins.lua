@@ -3,17 +3,25 @@ local bootstrap_value = bootstrap()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  --use { "catppuccin/nvim", as = "catppuccin" }
+
+  -- use { "catppuccin/nvim", as = "catppuccin" }
+  --
   use 'tanvirtin/monokai.nvim'
   use 'tpope/vim-surround'
   use 'junegunn/fzf.vim'
   use 'nvim-lua/plenary.nvim'
-  use "lukas-reineke/indent-blankline.nvim"
-  use 'ggandor/leap.nvim'
+  --use "lukas-reineke/indent-blankline.nvim"
+
+  use 'sheerun/vim-polyglot'
+
+  -- use 'ggandor/leap.nvim'
+  use 'easymotion/vim-easymotion'
+
   use {
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
+
   use 'neovim/nvim-lspconfig'
   use 'habamax/vim-asciidoctor'
   use 'tpope/vim-fugitive'
@@ -23,8 +31,6 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
-
-  use 'nvim-treesitter/nvim-treesitter'
 
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
