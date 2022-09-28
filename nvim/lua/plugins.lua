@@ -4,7 +4,7 @@ local bootstrap_value = bootstrap()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   --use { "catppuccin/nvim", as = "catppuccin" }
-  use 'UtkarshVerma/molokai.nvim'
+  use 'tanvirtin/monokai.nvim'
   use 'tpope/vim-surround'
   use 'junegunn/fzf.vim'
   use 'nvim-lua/plenary.nvim'
@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
     config = function() require("nvim-autopairs").setup {} end
   }
   use 'neovim/nvim-lspconfig'
-
+  use 'habamax/vim-asciidoctor'
   use 'tpope/vim-fugitive'
 
   use 'hrsh7th/cmp-nvim-lsp'
@@ -23,6 +23,8 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
+
+  use 'nvim-treesitter/nvim-treesitter'
 
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- Snippets plugin

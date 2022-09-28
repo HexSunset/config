@@ -21,9 +21,15 @@ require('indent_blankline').setup{}
 require('cmp-setup')
 
 
+----------------
+-- TREESITTER --
+----------------
+require('nvim-treesitter').setup()
+
+
 -----------
 -- THEME --
 -----------
 --vim.g.catppuccin_flavour = "macchiato" -- latte, frappe, macchiato, mocha
 --require("catppuccin").setup()
-vim.cmd [[colorscheme molokai]]
+require("monokai").setup { palette = require("monokai").soda }
