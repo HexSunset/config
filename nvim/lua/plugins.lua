@@ -5,7 +5,8 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- use { "catppuccin/nvim", as = "catppuccin" }
-  --
+  use 'psliwka/vim-smoothie'
+
   use 'tanvirtin/monokai.nvim'
   use 'tpope/vim-surround'
   use 'junegunn/fzf.vim'
