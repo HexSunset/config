@@ -3,6 +3,19 @@ local opts = { noremap=true, silent=true }
 -- Window key
 vim.keymap.set('n', ';', '<C-w>', opts)
 
+-- Movement
+vim.keymap.set('n', 'gj', 'G', opts)
+vim.keymap.set('n', 'gk', 'gg', opts)
+vim.keymap.set('n', 'gh', '0', opts)
+vim.keymap.set('n', 'gl', '$', opts)
+vim.keymap.set('n', 'gs', '^', opts)
+
+vim.keymap.set('v', 'gj', 'G', opts)
+vim.keymap.set('v', 'gk', 'gg', opts)
+vim.keymap.set('v', 'gh', '0', opts)
+vim.keymap.set('v', 'gl', '$', opts)
+vim.keymap.set('v', 'gs', '^', opts)
+
 -- Buffers
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', opts)
 vim.keymap.set('n', '<C-s>', ':w<CR>', opts)
