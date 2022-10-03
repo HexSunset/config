@@ -15,7 +15,7 @@ set $mod Mod4
 font pango:terminus 8
 
 # Set window borders
-new_window pixel 1
+new_window pixel 3
 new_float normal
 
 # Start XDG autostart .desktop files using dex. See also
@@ -234,7 +234,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+#bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
