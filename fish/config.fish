@@ -1,5 +1,5 @@
 if status is-interactive
-    set fish_greeting "Ahoy, captain!"
+    set fish_greeting "Welcome aboard."
     fish_config prompt choose informative_vcs
     fish_config theme choose Base16\ Default\ Dark
 
