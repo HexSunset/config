@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
   }
 
   use 'neovim/nvim-lspconfig'
-  use 'habamax/vim-asciidoctor'
+  --use 'habamax/vim-asciidoctor' -- NOTE: Does not behave
   use 'tpope/vim-fugitive'
 
   use 'hrsh7th/cmp-nvim-lsp'
