@@ -50,8 +50,8 @@ exec feh --bg-scale $HOME/.config/wallpapers/cyber_city.png
 # Start picom compositor
 exec --no-startup-id picom --config $HOME/.config/picom/picom.conf -b
 
-# Start wired notification manager
-exec --no-startup-id wired
+# Start dunst notification manager
+exec --no-startup-id dunst
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym $mod+plus exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% 
