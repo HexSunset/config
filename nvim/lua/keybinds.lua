@@ -3,6 +3,12 @@ local opts = { noremap=true, silent=true }
 -- Window key
 vim.keymap.set('n', ';', '<C-w>', opts)
 
+-- Git
+vim.keymap.set('n', '<leader>gg', ':G<CR>', opts)
+vim.keymap.set('n', '<leader>gc', ':G commit<CR>', opts)
+vim.keymap.set('n', '<leader>gp', ':G push<CR>', opts)
+vim.keymap.set('n', '<leader>gf', ':G pull<CR>', opts)
+
 -- Movement
 vim.keymap.set('n', 'gj', 'G', opts)
 vim.keymap.set('n', 'gk', 'gg', opts)
