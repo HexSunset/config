@@ -49,3 +49,6 @@
 
 !wallpapers/
 !wallpapers/*
+
+!dunst/
+!dunst/*
