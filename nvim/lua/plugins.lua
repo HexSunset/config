@@ -4,6 +4,9 @@ local bootstrap_value = bootstrap()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
+  -- Justfile syntax highlighting and stuff
+  use 'NoahTheDuke/vim-just'
+
   -- use { "catppuccin/nvim", as = "catppuccin" }
   use 'psliwka/vim-smoothie'
 
@@ -13,7 +16,7 @@ return require('packer').startup(function(use)
   use 'nvim-lua/plenary.nvim'
   --use "lukas-reineke/indent-blankline.nvim"
 
-  use 'sheerun/vim-polyglot'
+  --use 'sheerun/vim-polyglot'
 
   -- use 'ggandor/leap.nvim'
   use 'easymotion/vim-easymotion'
