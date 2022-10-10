@@ -5,6 +5,8 @@ vim.o.shiftwidth = 4
 
 vim.g.mapleader = ' '
 
+vim.g.syntax = "on"
+
 vim.o.clipboard = "unnamedplus"
 
 vim.o.number = true
