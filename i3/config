@@ -226,10 +226,10 @@ bindsym --release $mod+Shift+s exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e '
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        bindsym n resize shrink width 10 px or 10 ppt  # Narrower
-        bindsym w resize grow width 10 px or 10 ppt    # Wider
-        bindsym t resize grow height 10 px or 10 ppt   # Taller
-        bindsym s resize shrink height 10 px or 10 ppt # Shorter
+        bindsym n resize shrink width 10 px or 10 ppt 
+        bindsym w resize grow width 10 px or 10 ppt
+        bindsym t resize grow height 10 px or 10 ppt
+        bindsym s resize shrink height 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left        resize shrink width 10 px or 10 ppt
