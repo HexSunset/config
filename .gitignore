@@ -52,3 +52,6 @@
 
 !dunst/
 !dunst/*
+
+!emacs/
+!emacs/*
