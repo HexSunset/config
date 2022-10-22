@@ -1,4 +1,4 @@
-;; Glorious EMACS configuration file  -*- lexical-binding: t; -*-
+;; Glorious EMACS configuration file
 ;;
 ;; ███████╗███╗   ███╗ █████╗  ██████╗███████╗
 ;; ██╔════╝████╗ ████║██╔══██╗██╔════╝██╔════╝
@@ -14,7 +14,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("3d2e532b010eeb2f5e09c79f0b3a277bfc268ca91a59cdda7ffd056b868a03bc" default))
- '(package-selected-packages '(rust-mode magit gruber-darker-theme auto-complete)))
+ '(package-selected-packages '(evil rust-mode magit gruber-darker-theme auto-complete)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -31,7 +31,6 @@
 ;; Line numbers
 (require 'display-line-numbers)
 (setq display-line-numbers 'relative)
-(display-line-numbers-mode t)
  
 ;; Font
 (set-frame-font "Fira Code-16" t)
@@ -43,8 +42,11 @@
 (require 'ido)
 (ido-mode t)
 
+;; enable evil-mode >:)
+;; (require 'evil)
+;; (evil-mode 1)
+
 ;; Package management
 (package-initialize)
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
- 
