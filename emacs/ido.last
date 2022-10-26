@@ -2,8 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/aurora/.config/" . "emacs/")
  ("/home/aurora/" . ".config/")
+ ("/home/aurora/.config/" . "emacs/")
 )
 
 ;; ----- ido-work-directory-list -----
@@ -18,11 +18,15 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/aurora/" (25426 48506 357792 913000) ".steampid" ".steampath" ".Xauthority" ".doom.d/" ".lesshst" ".python_history" "VirtualBox VMs/" ".gdb_history" ".gdbinit" ".gef-2b72f5d0d9f0f218a91cd1ca5148e45923b950d5.py" ".gdbinit.old" ".lldb/" ".mysql/" ".yarn/" ".nvidia-settings-rc" ".vscode-oss/" ".node_repl_history" ".cargo/" ".viminfo" "Templates/" "Desktop/" ".config/" ".wine/" ".factorio/" ".gitconfig" ".dwarffortress/" ".lexaloffle/" ".oracle_jre_usage/" ".w3m/" ".librewolf/" ".wget-hsts" ".java/" ".minecraft/" ".klei/" ".mono/" ".yarnrc" ".bash_history" ".ssh/" "Projects/" ".nv/" ".pulse-cookie" ".steam/" "Videos/" "Music/" "Documents/" ".pki/" ".fehbg" "Pictures/" "Downloads/" ".gnupg/" ".npm/" ".profile" ".rustup/" ".mozilla/" "Sources/" ".cache/" ".local/" ".bashrc" ".bash_profile" ".bash_logout" "../" "./")
+ ("/home/aurora/.config/emacs/" (25432 64184 784088 702000) "ido.last" "ido.last~" "init.el" "smex-items" "init.el~" "elpa/" "auto-save-list/" "../" "./")
 
- ("/home/aurora/.config/" (25426 48510 397757 452000) "emacs/" "Loop_Hero/" "QtProject.conf" ".gitignore" "dunst/" "VirtualBox/" "pavucontrol.ini" "libreoffice/" "nvim/" "ibus/" "fcitx/" "fcitx5/" "helix/" "gh/" "VSCodium/" "fontforge/" "nuclearthrone/" "coc/" "wallpapers/" "wal/" "vlc/" "dconf/" "gtk-3.0/" "htop/" "nnn/" "qBittorrent/" "menus/" "lutris/" "user-dirs.dirs" "unity3d/" "cef_user_data/" "spotify/" "user-dirs.locale" "neofetch/" "mimeapps.list" "discord/" "lazygit/" "tool_list.txt" "rofi/" "polybar/" "kitty/" "i3/" "i3-scrot.conf" "fish/" ".git/" "../" "./")
+ ("/home/aurora/" (25432 63893 664600 382000) ".gtkrc-2.0" ".icons/" ".lesshst" ".Xauthority" ".steampid" ".steampath" "olympus/" ".doom.d/" ".python_history" "VirtualBox VMs/" ".gdb_history" ".gdbinit" ".gef-2b72f5d0d9f0f218a91cd1ca5148e45923b950d5.py" ".gdbinit.old" ".lldb/" ".mysql/" ".yarn/" ".nvidia-settings-rc" ".vscode-oss/" ".node_repl_history" ".cargo/" ".viminfo" "Templates/" "Desktop/" ".config/" ".wine/" ".factorio/" ".gitconfig" ".dwarffortress/" ".lexaloffle/" ".oracle_jre_usage/" ".w3m/" ".librewolf/" ".wget-hsts" ".java/" ".minecraft/" ".klei/" ".mono/" ".yarnrc" ".bash_history" ".ssh/" "Projects/" ".nv/" ".pulse-cookie" ".steam/" "Videos/" "Music/" "Documents/" ".pki/" ".fehbg" "Pictures/" "Downloads/" ".gnupg/" ".npm/" ".profile" ".rustup/" ".mozilla/" "Sources/" ".cache/" ".local/" ".bashrc" ".bash_profile" ".bash_logout" "../" "./")
 
- ("/home/aurora/.config/emacs/" (25426 55881 940078 760000) "init.el" "init.el~" "auto-save-list/" "../" "./")
+ ("/home/" (25285 44314 812337 977000) "aurora/" "../" "./")
+
+ ("/home/aurora/.config/gtk-3.0/" (25355 40080 716359 468000) "bookmarks" "../" "./")
+
+ ("/home/aurora/.config/" (25432 4937 438236 733000) "mimeapps.list" "Olympus/" "emacs/" "pavucontrol.ini" "Loop_Hero/" "QtProject.conf" ".gitignore" "dunst/" "VirtualBox/" "libreoffice/" "nvim/" "ibus/" "fcitx/" "fcitx5/" "helix/" "gh/" "VSCodium/" "fontforge/" "nuclearthrone/" "coc/" "wallpapers/" "wal/" "vlc/" "dconf/" "gtk-3.0/" "htop/" "nnn/" "qBittorrent/" "menus/" "lutris/" "user-dirs.dirs" "unity3d/" "cef_user_data/" "spotify/" "user-dirs.locale" "neofetch/" "discord/" "lazygit/" "tool_list.txt" "rofi/" "polybar/" "kitty/" "i3/" "i3-scrot.conf" "fish/" ".git/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
