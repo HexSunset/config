@@ -43,6 +43,7 @@ exec --no-startup-id fcitx5 -d
 # Enable touchpad tap to click
 exec xinput set-prop "MSFT0001:00 06CB:CE2D Touchpad" "libinput Tapping Enabled" 1
 exec setxkbmap ee us
+exec setxkbmap -option ctrl:nocaps
 
 # Set wallpaper
 exec feh --bg-scale $HOME/.config/wallpapers/cyber_city.png
