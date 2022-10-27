@@ -16,9 +16,10 @@
  '(custom-enabled-themes '(gruber-darker))
  '(custom-safe-themes
    '("3d2e532b010eeb2f5e09c79f0b3a277bfc268ca91a59cdda7ffd056b868a03bc" default))
+ '(display-line-numbers 'relative)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
- '(package-selected-packages '(gruber-darker-theme python smex rust-mode))
+ '(package-selected-packages '(gruber-darker-theme python smex rust-mode magit))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -63,3 +64,7 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; Old M-x behaviour
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;; ----------------------
+;; --- OTHER SETTINGS ---
+;; ----------------------
