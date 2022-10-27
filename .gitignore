@@ -57,3 +57,4 @@
 !emacs/init.el
 !emacs/elpa/
 !emacs/elpa/*
+emacs/*
