@@ -58,3 +58,5 @@
 !emacs/elpa/
 !emacs/elpa/*
 emacs/*
+
+emacs/ido.last
