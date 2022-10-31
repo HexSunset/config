@@ -202,14 +202,6 @@ bindsym $mod+Shift+c exec kitty emacs ~/.config/
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-
-# Scratchpad terminal
-exec --no-startup-id $Terminal --name dropdown
-
-for_window [instance="dropdown"] floating enable, border none, move absolute position 0px 0px, resize set 1366 250px, move scratchpad
-
-bindsym $mod+y [instance="dropdown"] scratchpad show
-
 # Exit dialogue
 bindsym $mod+Shift+e exec --no-startup-id rofi -show menu -modi menu:$HOME/.config/rofi/rofi-power-menu
 
