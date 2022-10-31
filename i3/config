@@ -197,7 +197,7 @@ bindsym $mod+Shift+p move container to workspace $ws8
 bindsym $mod+c reload
 
 # open config folder
-bindsym $mod+Shift+c exec kitty nvim ~/.config/ +GFiles
+bindsym $mod+Shift+c exec kitty emacs ~/.config/
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
