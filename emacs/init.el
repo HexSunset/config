@@ -58,3 +58,7 @@
 ;; Make OS clipboard work
 (setq x-select-enable-clipboard t)
 (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
+
+;; Custom autosave folder
+(setq backup-directory-alist
+      `(("." . ,(concat user-emacs-directory "backups"))))
