@@ -4,7 +4,7 @@
 ;; ██╔══╝  ██║╚██╔╝██║██╔══██║██║     ╚════██║
 ;; ███████╗██║ ╚═╝ ██║██║  ██║╚██████╗███████║
 ;; ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
-                                           
+
 ;; --------------
 ;; --- CUSTOM ---
 ;; --------------
@@ -19,8 +19,17 @@
  '(display-line-numbers 'relative)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
- '(package-selected-packages
-   '(monokai-theme adoc-mode python smex rust-mode magit))
+ '(org-agenda-files
+   '("~/org/agenda/school.org" "/home/aurora/org/agenda/personal.org"))
+ '(org-capture-templates
+   '(("p" "personal task" entry
+      (file "~/org/agenda/personal.org")
+      "" :time-prompt t)
+     ("s" "school task" entry
+      (file "~/org/agenda/school.org")
+      "" :time-prompt t)))
+ '(org-todo-keywords '((sequence "TODO" "DONE" "WAITING" "CANCELLED")))
+ '(package-selected-packages '(deft monokai-theme adoc-mode python smex rust-mode magit))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -49,6 +58,31 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; Old M-x behaviour
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;; deft will be used to organize org-mode notes
+(setq deft-directory "~/org/notes/")
+(setq deft-recursive t)
+
+;; ----------------
+;; --- ORG-MODE ---
+;; ----------------
+
+;; keybinds for convenience
+
+(global-set-key (kbd "C-c l") #'org-store-link)
+(global-set-key (kbd "C-c a") #'org-agenda)
+(global-set-key (kbd "C-c c") #'org-capture)
+(global-set-key (kbd "C-c d") #'deft)
+
+;; capture timestamp when todo state changes
+(setq org-log-done 'time)
+
+;; org-capture templates
+(setq org-capture-templates
+      '(("p" "Personal task" entry (file "~/org/agenda/personal.org")
+         "* TODO %^{task}\n\n  DEADLINE: %^t\n")
+        ("s" "School task" entry (file "~/org/agenda/school.org")
+         "* TODO %^{task}\n\n  DEADLINE: %^t\n")))
 
 
 ;; ----------------------
