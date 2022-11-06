@@ -3,7 +3,7 @@ if status is-interactive
     fish_config prompt choose informative_vcs
     fish_config theme choose Base16\ Default\ Dark
 
-    set -gx EDITOR nvim
+    set -gx EDITOR emacs
 
     set -e FZF_DEFAULT_OPTS
 
@@ -11,6 +11,8 @@ if status is-interactive
     set -gx QT_IM_MODULE fcitx
     set -gx XMODIFIERS fcitx
     set -gx GLFW_IM_MODULE ibus
+
+    set -gxa PATH "$HOME/.cargo/bin/"
 
     alias r "rm -f"
     alias rr "rm -rf"
