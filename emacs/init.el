@@ -27,9 +27,10 @@
       "" :time-prompt t)
      ("s" "school task" entry
       (file "~/org/agenda/school.org")
-      "" :time-prompt t)))
+      "" :time-prompt t)) t)
  '(org-todo-keywords '((sequence "TODO" "DONE" "WAITING" "CANCELLED")))
- '(package-selected-packages '(deft monokai-theme adoc-mode python smex rust-mode magit))
+ '(package-selected-packages
+   '(company ido-hacks ido-at-point deft monokai-theme adoc-mode python smex rust-mode magit))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -52,6 +53,11 @@
 ;; --------------------------
 (ido-mode)
 (ido-everywhere 1)
+
+(global-visual-line-mode)
+
+;; Get completion everywhere
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;; Smex is ido for M-x
 (global-set-key (kbd "M-x") 'smex)
