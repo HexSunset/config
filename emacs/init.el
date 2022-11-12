@@ -30,7 +30,7 @@
       "" :time-prompt t)) t)
  '(org-todo-keywords '((sequence "TODO" "DONE" "WAITING" "CANCELLED")))
  '(package-selected-packages
-   '(auto-complete switch-window ido-hacks ido-at-point deft monokai-theme adoc-mode python smex rust-mode magit))
+   '(avy auto-complete switch-window ido-hacks ido-at-point deft monokai-theme adoc-mode python smex rust-mode magit))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -38,7 +38,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :extend nil :stipple nil :background "#282828" :foreground "#ebdbb2" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "SRC" :family "Hack")))))
+ '(default ((t (:inherit nil :extend nil :stipple nil :background "#272720" :foreground "#ebdbb2" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "SRC" :family "Hack")))))
 
 
 ;; ---------------------------
@@ -72,6 +72,9 @@
 ;; Dimmer
 (dimmer-configure-which-key)
 (dimmer-mode t)
+
+;; avy
+(global-set-key (kbd "C-:") 'avy-goto-char)
 
 ;; switch-window keybinds
 (global-set-key (kbd "C-x o") 'switch-window)
