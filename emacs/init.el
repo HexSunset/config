@@ -30,7 +30,7 @@
       "" :time-prompt t)) t)
  '(org-todo-keywords '((sequence "TODO" "DONE" "WAITING" "CANCELLED")))
  '(package-selected-packages
-   '(tron-legacy-theme cyberpunk-theme auto-complete switch-window ido-hacks ido-at-point deft monokai-theme adoc-mode python smex rust-mode magit))
+   '(auto-complete switch-window ido-hacks ido-at-point deft monokai-theme adoc-mode python smex rust-mode magit))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
