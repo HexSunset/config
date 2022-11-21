@@ -30,7 +30,7 @@
       "" :time-prompt t)) t)
  '(org-todo-keywords '((sequence "TODO" "DONE" "WAITING" "CANCELLED")))
  '(package-selected-packages
-   '(evil-visual-mark-mode evil avy auto-complete switch-window ido-hacks ido-at-point deft monokai-theme adoc-mode python smex rust-mode magit)))
+   '(monokai-theme python smex rust-mode magit)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -74,9 +74,6 @@
 (ido-everywhere 1)
 
 (global-visual-line-mode)
-
-;; auto-complete
-(ac-config-default)
 
 ;; Smex is ido for M-x
 (global-set-key (kbd "M-x") 'smex)
