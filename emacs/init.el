@@ -30,15 +30,34 @@
       "" :time-prompt t)) t)
  '(org-todo-keywords '((sequence "TODO" "DONE" "WAITING" "CANCELLED")))
  '(package-selected-packages
-   '(evil-visual-mark-mode evil avy auto-complete switch-window ido-hacks ido-at-point deft monokai-theme adoc-mode python smex rust-mode magit))
- '(scroll-bar-mode nil)
- '(tool-bar-mode nil))
+   '(evil-visual-mark-mode evil avy auto-complete switch-window ido-hacks ido-at-point deft monokai-theme adoc-mode python smex rust-mode magit)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :extend nil :stipple nil :background "#272720" :foreground "#ebdbb2" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "SRC" :family "Hack")))))
+
+;; --------------
+;; --- VISUAL ---
+;; --------------
+(setq inhibit-startup-screen t)
+(setq inhibit-startup-message t)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(menu-bar-mode -1)
+(setq inhibit-startup-echo-area-message t)
+(setq initial-scratch-message nil)
+(setq initial-buffer-choice nil)
+(setq frame-title-format nil)
+(setq use-file-dialog nil)
+(setq use-dialog-box nil)
+(setq pop-up-windows nil)
+(setq indicate-empty-lines nil)
+(setq cursor-in-non-selected-windows nil)
+(setq initial-major-mode 'text-mode)
+(setq default-major-mode 'text-mode)
+(setq completion-styles '(basic substring))
 
 
 ;; ---------------------------
