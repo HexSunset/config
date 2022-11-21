@@ -69,24 +69,7 @@
 ;; ----------------
 ;; --- ORG-MODE ---
 ;; ----------------
-
-;; keybinds for convenience
-
-(global-set-key (kbd "C-c l") #'org-store-link)
-(global-set-key (kbd "C-c a") #'org-agenda)
-(global-set-key (kbd "C-c c") #'org-capture)
-(global-set-key (kbd "C-c d") #'deft)
-
-;; capture timestamp when todo state changes
-(setq org-log-done 'time)
-
-;; org-capture templates
-(setq org-capture-templates
-      '(("p" "Personal task" entry (file "~/org/agenda/personal.org")
-         "* TODO %^{task}\n\n  DEADLINE: %^t\n")
-        ("s" "School task" entry (file "~/org/agenda/school.org")
-         "* TODO %^{task}\n\n  DEADLINE: %^t\n")))
-
+;; TODO: configure things idk
 
 ;; ----------------------
 ;; --- OTHER SETTINGS ---
