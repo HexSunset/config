@@ -72,6 +72,31 @@
 
 
 ;; ----------------
+;; --- KEYBINDS ---
+;; ----------------
+
+;; New frame
+(defun new-frame ()
+  (interactive)
+  (select-frame (make-frame))
+  (switch-to-buffer "*scratch*"))
+(global-set-key (kbd "M-n") 'new-frame)
+(global-set-key (kbd "M-`") 'other-frame)
+
+;; Kill current buffer
+(global-set-key (kbd "C-x k") 'kill-current-buffer)
+
+;; Close frame if not the last, kill emacs else
+(defun delete-frame-or-kill-emacs ()
+  "Delete frame or kill Emacs if there is only one frame."
+  (interactive)
+  (if (> (length (frame-list)) 1)
+      (delete-frame)
+    (save-buffers-kill-terminal)))
+(global-set-key (kbd "C-x C-c") 'delete-frame-or-kill-emacs)
+
+
+;; ----------------
 ;; --- ORG-MODE ---
 ;; ----------------
 ;; TODO: configure things idk
