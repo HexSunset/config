@@ -18,18 +18,6 @@
  '(custom-safe-themes
    '("2af6d337981b88f85980124e47e11cbff819200bba92648f59154a6ff35a7801" "e80b1078c4ce2225f6f8d7621a55d3b675c86cad505b22b20243d4d075f491f5" "b66970f42d765a40fdb2b6b86dd2ab6289bed518cf4d8973919e5f24f0ca537b" "78e6be576f4a526d212d5f9a8798e5706990216e9be10174e3f3b015b8662e27" "3d2e532b010eeb2f5e09c79f0b3a277bfc268ca91a59cdda7ffd056b868a03bc" default))
  '(display-line-numbers 'relative)
- '(inhibit-startup-screen t)
- '(menu-bar-mode nil)
- '(org-agenda-files
-   '("~/org/agenda/school.org" "/home/aurora/org/agenda/personal.org"))
- '(org-capture-templates
-   '(("p" "personal task" entry
-      (file "~/org/agenda/personal.org")
-      "" :time-prompt t)
-     ("s" "school task" entry
-      (file "~/org/agenda/school.org")
-      "" :time-prompt t)) t)
- '(org-todo-keywords '((sequence "TODO" "DONE" "WAITING" "CANCELLED")))
  '(package-selected-packages
    '(monokai-theme python smex rust-mode magit)))
 (custom-set-faces
