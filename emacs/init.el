@@ -30,7 +30,7 @@
       "" :time-prompt t)) t)
  '(org-todo-keywords '((sequence "TODO" "DONE" "WAITING" "CANCELLED")))
  '(package-selected-packages
-   '(avy auto-complete switch-window ido-hacks ido-at-point deft monokai-theme adoc-mode python smex rust-mode magit))
+   '(evil-visual-mark-mode evil avy auto-complete switch-window ido-hacks ido-at-point deft monokai-theme adoc-mode python smex rust-mode magit))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -64,34 +64,6 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; Old M-x behaviour
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
-;; deft will be used to organize org-mode notes
-(setq deft-directory "~/org/notes/")
-(setq deft-recursive t)
-
-;; Dimmer
-(dimmer-configure-which-key)
-(dimmer-mode t)
-
-;; avy
-(global-set-key (kbd "C-:") 'avy-goto-char)
-
-;; switch-window keybinds
-(global-set-key (kbd "C-x o") 'switch-window)
-(global-set-key (kbd "C-x 1") 'switch-window-then-maximize)
-(global-set-key (kbd "C-x 2") 'switch-window-then-split-below)
-(global-set-key (kbd "C-x 3") 'switch-window-then-split-right)
-(global-set-key (kbd "C-x 0") 'switch-window-then-delete)
-
-(global-set-key (kbd "C-x 4 d") 'switch-window-then-dired)
-(global-set-key (kbd "C-x 4 f") 'switch-window-then-find-file)
-(global-set-key (kbd "C-x 4 m") 'switch-window-then-compose-mail)
-(global-set-key (kbd "C-x 4 r") 'switch-window-then-find-file-read-only)
-
-(global-set-key (kbd "C-x 4 C-f") 'switch-window-then-find-file)
-(global-set-key (kbd "C-x 4 C-o") 'switch-window-then-display-buffer)
-
-(global-set-key (kbd "C-x 4 0") 'switch-window-then-kill-buffer)
 
 
 ;; ----------------
