@@ -7,27 +7,6 @@
 ;; by Aurora<3
 
 ;; --------------
-;; --- CUSTOM ---
-;; --------------
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(monokai))
- '(custom-safe-themes
-   '("2af6d337981b88f85980124e47e11cbff819200bba92648f59154a6ff35a7801" "e80b1078c4ce2225f6f8d7621a55d3b675c86cad505b22b20243d4d075f491f5" "b66970f42d765a40fdb2b6b86dd2ab6289bed518cf4d8973919e5f24f0ca537b" "78e6be576f4a526d212d5f9a8798e5706990216e9be10174e3f3b015b8662e27" "3d2e532b010eeb2f5e09c79f0b3a277bfc268ca91a59cdda7ffd056b868a03bc" default))
- '(display-line-numbers 'relative)
- '(package-selected-packages
-   '(monokai-theme python smex rust-mode magit)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :extend nil :stipple nil :background "#272720" :foreground "#ebdbb2" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "SRC" :family "Hack")))))
-
-;; --------------
 ;; --- VISUAL ---
 ;; --------------
 (setq inhibit-startup-screen t)
@@ -48,6 +27,7 @@
 (setq default-major-mode 'text-mode)
 (setq completion-styles '(basic substring))
 
+(setq display-line-numbers 'relative)
 
 ;; ---------------------------
 ;; --- INSTALLING PACKAGES ---
