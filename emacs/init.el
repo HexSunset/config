@@ -6,9 +6,12 @@
 ;; ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
 ;; Config by Aurora<3
 
-;; --------------
-;; --- VISUAL ---
-;; --------------
+
+;; -----------------
+;; --- INTERFACE ---
+;; -----------------
+
+;; Disable unwanted things
 (setq inhibit-startup-screen t)
 (setq inhibit-startup-message t)
 (tool-bar-mode -1)
@@ -27,7 +30,16 @@
 (setq default-major-mode 'text-mode)
 (setq completion-styles '(basic substring))
 
-(setq display-line-numbers 'relative)
+(setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode)
+
+
+;; ------------------
+;; --- APPEARANCE ---
+;; ------------------
+(set-face-attribute 'default nil :font "Hack" :height 140)
+(load-theme 'gruvbox-dark-medium t) ;; The t makes emacs not ask before loading the theme
+
 
 ;; ---------------------------
 ;; --- INSTALLING PACKAGES ---
@@ -92,3 +104,15 @@
 ;; Custom autosave folder
 (setq backup-directory-alist
       `(("." . ,(concat user-emacs-directory "backups"))))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(smex rust-mode magit gruvbox-theme)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
