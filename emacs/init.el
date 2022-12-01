@@ -23,7 +23,7 @@
 (setq frame-title-format nil)
 (setq use-file-dialog nil)
 (setq use-dialog-box nil)
-(setq pop-up-windows nil)
+;; (setq pop-up-windows nil)
 (setq indicate-empty-lines nil)
 (setq cursor-in-non-selected-windows nil)
 (setq initial-major-mode 'text-mode)
