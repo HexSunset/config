@@ -41,26 +41,31 @@
 (load-theme 'gruvbox-dark-medium t) ;; The t makes emacs not ask before loading the theme
 
 
-;; ---------------------------
-;; --- INSTALLING PACKAGES ---
-;; ---------------------------
+;; ----------------
+;; --- PACKAGES ---
+;; ----------------
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 
+(setq package-enable-at-startup nil)
+(package-initialize)
 
-;; --------------------------
-;; --- CONFIGURE PACKAGES ---
-;; --------------------------
-(ido-mode)
-(ido-everywhere 1)
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
-(global-visual-line-mode)
-
-;; Smex is ido for M-x
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; Old M-x behaviour
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+(use-package ido
+  :config
+  (ido-mode 1))
+(use-package evil
+  :config
+  (evil-mode 1))
+(use-package magit)
+(use-package helm
+  :config
+  (helm-mode 1))
 
 
 ;; ----------------
@@ -87,11 +92,28 @@
     (save-buffers-kill-terminal)))
 (global-set-key (kbd "C-x C-c") 'delete-frame-or-kill-emacs)
 
+;; Helm stuff
+(global-set-key (kbd "M-x") 'helm-M-x)
+(setq completion-styles '(flex))
 
-;; ----------------
-;; --- ORG-MODE ---
-;; ----------------
-;; TODO: configure things idk
+;;; esc quits
+(defun minibuffer-keyboard-quit ()
+  "Abort recursive edit.
+In Delete Selection mode, if the mark is active, just deactivate it;
+then it takes a second \\[keyboard-quit] to abort the minibuffer."
+  (interactive)
+  (if (and delete-selection-mode transient-mark-mode mark-active)
+      (setq deactivate-mark  t)
+    (when (get-buffer "*Completions*") (delete-windows-on "*Completions*"))
+    (abort-recursive-edit)))
+(define-key evil-normal-state-map [escape] 'keyboard-quit)
+(define-key evil-visual-state-map [escape] 'keyboard-quit)
+(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+
 
 ;; ----------------------
 ;; --- OTHER SETTINGS ---
@@ -104,12 +126,14 @@
 ;; Custom autosave folder
 (setq backup-directory-alist
       `(("." . ,(concat user-emacs-directory "backups"))))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(dynamic-spaces smex rust-mode magit gruvbox-theme)))
+ '(package-selected-packages
+   '(helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
