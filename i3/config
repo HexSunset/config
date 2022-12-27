@@ -11,6 +11,7 @@
 
 set $mod Mod4
 set $Terminal kitty
+set $Editor "emacsclient -c -a emacs"
 
 # Font for window titles. Will also be used by the bar unless a different font
 font pango:terminus 8
@@ -74,10 +75,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 10%-
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec $Terminal
 
 # start a text editor
-bindsym $mod+x exec emacs
+bindsym $mod+n exec $Editor
 
 # start browser
 bindsym $mod+b exec firefox
@@ -199,7 +200,7 @@ bindsym $mod+Shift+p move container to workspace $ws8
 bindsym $mod+c reload
 
 # open config folder
-bindsym $mod+Shift+c exec kitty emacs ~/.config/
+bindsym $mod+Shift+c exec $Editor ~/.config/
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -241,4 +242,3 @@ bindsym $mod+r mode "resize"
 
 # Launch bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-
