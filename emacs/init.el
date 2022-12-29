@@ -91,7 +91,7 @@
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
 (setq completion-styles '(flex))
 
-;;; esc quits
+;; esc quits
 (defun minibuffer-keyboard-quit ()
   "Abort recursive edit.
 In Delete Selection mode, if the mark is active, just deactivate it;
