@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;; ███████╗███╗   ███╗ █████╗  ██████╗███████╗
 ;; ██╔════╝████╗ ████║██╔══██╗██╔════╝██╔════╝
 ;; █████╗  ██╔████╔██║███████║██║     ███████╗
@@ -26,7 +27,7 @@
 ;; (setq pop-up-windows nil)
 (setq indicate-empty-lines nil)
 (setq cursor-in-non-selected-windows nil)
-(setq initial-major-mode 'text-mode)
+;; (setq initial-major-mode 'text-mode)
 (setq default-major-mode 'text-mode)
 (setq completion-styles '(basic substring))
 
