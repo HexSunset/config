@@ -90,7 +90,8 @@
    "ff" 'helm-find-files
    "d"  'dired
    "e"  'helm-M-x
-   "g"  'magit)
+   "g"  'magit
+   "c"  'calendar)
 )
 
 ;; Helm stuff
