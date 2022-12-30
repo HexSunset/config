@@ -58,21 +58,41 @@
   (package-install 'use-package))
 
 (use-package ido
+  :ensure
   :config
   (ido-mode 1))
 (use-package evil
+  :ensure
   :config
   (evil-mode 1))
 (use-package magit)
 (use-package helm
+  :ensure
   :config
   (helm-mode 1)
   (helm-autoresize-mode 1))
 (use-package evil-collection
+  :ensure
   :custom (evil-collection-setup-minibuffer t)
   :init
   (setq evil-want-keybinding nil)
   (evil-collection-init '(calendar dired magit ediff calc)))
+(use-package company
+  :ensure
+  :custom
+  (company-idle-delay 0.5)
+  :bind
+  (:map company-active-map
+	("C-n" . company-select-next)
+	("C-p" . company-select-previous)
+	("C-<" . company-select-first)
+	("C->" . company-select-last)))
+(use-package yasnippet
+  :ensure
+  :config
+  (yas-reload-all)
+  (add-hook 'prog-mode-hook 'yas-minor-mode)
+  (add-hook 'text-mode-hook 'yas-minor-mode))
 
 
 ;; ----------------
@@ -142,7 +162,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
+   '(yasnippet company general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
