@@ -88,6 +88,7 @@
    "bd" 'kill-current-buffer
    "bl" 'helm-buffers-list
    "ff" 'helm-find-files
+   "d"  'dired
    "e"  'helm-M-x
    "g"  'magit)
 )
