@@ -119,6 +119,14 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 ;; --- OTHER SETTINGS ---
 ;; ----------------------
 
+;; define function to shutdown emacs server instance
+(defun server-shutdown ()
+  "Save buffers, Quit, and Shutdown (kill) server"
+  (interactive)
+  (save-some-buffers)
+  (kill-emacs)
+  )
+
 ;; Make OS clipboard work
 (setq x-select-enable-clipboard t)
 (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
