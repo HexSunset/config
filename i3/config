@@ -48,7 +48,7 @@ exec xinput set-prop "MSFT0001:00 06CB:CE2D Touchpad" "libinput Tapping Enabled"
 exec setxkbmap -option ctrl:nocaps ee us 
 
 # Set wallpaper
-exec feh --bg-scale $HOME/Pictures/wallpaper/space_station.png
+exec feh --bg-scale $HOME/.config/wallpapers/magenta_punk.png
 
 # Start picom compositor
 exec --no-startup-id picom --config $HOME/.config/picom/picom.conf -b
