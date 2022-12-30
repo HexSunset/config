@@ -68,27 +68,31 @@
   :config
   (helm-mode 1)
   (helm-autoresize-mode 1))
+(use-package evil-collection
+  :custom (evil-collection-setup-minibuffer t)
+  :init
+  (setq evil-want-keybinding nil)
+  (evil-collection-init '(calendar dired magit)))
 
 
 ;; ----------------
 ;; --- KEYBINDS ---
 ;; ----------------
 
-;; New frame
-(defun new-frame ()
-  (interactive)
-  (select-frame (make-frame))
-  (switch-to-buffer "*scratch*"))
-(global-set-key (kbd "M-n") 'new-frame)
-(global-set-key (kbd "M-`") 'other-frame)
-
-;; Kill current buffer
-(global-set-key (kbd "C-x k") 'kill-current-buffer)
+(use-package general
+  :config
+  (general-create-definer my-leader-def
+    :prefix "SPC")
+  (my-leader-def
+   :keymaps 'normal
+   "bd" 'kill-current-buffer
+   "bl" 'helm-buffers-list
+   "ff" 'helm-find-files
+   "e"  'helm-M-x
+   "g"  'magit)
+)
 
 ;; Helm stuff
-(global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-x C-f") 'helm-find-files)
-(global-set-key (kbd "C-x b") 'helm-buffers-list)
 (setq completion-styles '(flex))
 
 ;; esc quits
@@ -128,7 +132,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
+   '(general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
