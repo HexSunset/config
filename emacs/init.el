@@ -72,7 +72,7 @@
   :custom (evil-collection-setup-minibuffer t)
   :init
   (setq evil-want-keybinding nil)
-  (evil-collection-init '(calendar dired magit)))
+  (evil-collection-init '(calendar dired magit ediff calc)))
 
 
 ;; ----------------
