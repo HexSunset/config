@@ -79,6 +79,8 @@
   (evil-collection-init '(calendar dired magit ediff calc)))
 (use-package company
   :ensure
+  :config
+  (company-mode)
   :custom
   (company-idle-delay 0.5)
   :bind
