@@ -118,7 +118,9 @@
    "d"  'dired
    "e"  'helm-M-x
    "g"  'magit
-   "c"  'calendar)
+   "c"  'calendar
+   "t"  'term
+   )
 )
 
 ;; Helm stuff
