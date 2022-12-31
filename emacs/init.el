@@ -98,16 +98,15 @@
 ;; ----------------
 ;; --- KEYBINDS ---
 ;; ----------------
-
 (use-package general
   :config
   (general-create-definer my-leader-def
     :prefix "SPC")
   (my-leader-def
    :keymaps 'normal
-   "bd" 'kill-current-buffer
-   "bl" 'helm-buffers-list
-   "ff" 'helm-find-files
+   "fk" 'kill-current-buffer ;; Mnemonic File Kill
+   "fl" 'helm-buffers-list   ;; Mnemonic File List
+   "ff" 'helm-find-files     ;; Mnemonic File Find
    "d"  'dired
    "e"  'helm-M-x
    "g"  'magit
