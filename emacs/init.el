@@ -50,6 +50,9 @@
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 
+;; Folder for manually installed packages
+(add-to-list 'load-path "~/.config/emacs/elisp/")
+
 (setq package-enable-at-startup nil)
 (package-initialize)
 
@@ -96,6 +99,8 @@
   (yas-reload-all)
   (add-hook 'prog-mode-hook 'yas-minor-mode)
   (add-hook 'text-mode-hook 'yas-minor-mode))
+
+(use-package kbd-mode)
 
 
 ;; ----------------

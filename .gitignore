@@ -54,9 +54,11 @@
 !dunst/*
 
 !emacs/
+emacs/*
 !emacs/init.el
 !emacs/elpa/
 !emacs/elpa/*
-emacs/*
+!emacs/elisp/
+!emacs/elisp/*
 
 emacs/ido.last
