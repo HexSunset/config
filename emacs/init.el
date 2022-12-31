@@ -63,6 +63,8 @@
   (ido-mode 1))
 (use-package evil
   :ensure
+  :init
+  (setq evil-want-keybinding nil)
   :config
   (evil-mode 1))
 (use-package magit)
@@ -75,7 +77,6 @@
   :ensure
   :custom (evil-collection-setup-minibuffer t)
   :init
-  (setq evil-want-keybinding nil)
   (evil-collection-init '(calendar dired magit ediff calc)))
 (use-package company
   :ensure
