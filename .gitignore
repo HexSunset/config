@@ -2,8 +2,8 @@
 
 !.gitignore
 
-!systemd/
 !systemd/*
+!systemd/user/*
 
 !nvim/
 !nvim/*
