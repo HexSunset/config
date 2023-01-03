@@ -2,6 +2,9 @@
 
 !.gitignore
 
+!systemd/
+!systemd/*
+
 !nvim/
 !nvim/*
 !nvim/init.lua
