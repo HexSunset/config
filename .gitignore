@@ -4,6 +4,7 @@
 
 !systemd/*
 !systemd/user/*
+!systemd/user/emacs.service
 
 !nvim/
 !nvim/*
