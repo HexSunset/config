@@ -120,8 +120,8 @@
     :prefix "SPC")
   (my-leader-def
    :keymaps 'normal
-   "fk" 'kill-current-buffer ;; Mnemonic File Kill
-   "fl" 'helm-buffers-list   ;; Mnemonic File List
+   "bk" 'kill-current-buffer ;; Mnemonic Buffer Kill
+   "bl" 'helm-buffers-list   ;; Mnemonic Buffer List
    "ff" 'helm-find-files     ;; Mnemonic File Find
    "d"  'dired
    "e"  'helm-M-x
