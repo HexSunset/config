@@ -74,6 +74,10 @@
   (setq evil-want-keybinding nil)
   :config
   (evil-mode 1))
+(use-package evil-surround
+  :ensure
+  :config
+  (evil-surround-mode 1))
 (use-package magit)
 (use-package helm
   :ensure
@@ -174,7 +178,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(auto-complete-auctex auto-complete auctex-cluttex auctex-latexmk auctex yasnippet general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
+   '(evil-surround ac-html auto-complete-auctex auto-complete auctex-cluttex auctex-latexmk auctex yasnippet general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
