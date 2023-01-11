@@ -67,6 +67,7 @@
 (use-package auto-complete
   :ensure
   :config
+  (auto-complete-mode)
   (ac-config-default))
 (use-package evil
   :ensure
