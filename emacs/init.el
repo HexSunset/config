@@ -129,6 +129,9 @@
    "c"  'calendar
    "t"  'term
    )
+  (general-define-key
+   "C-s" 'save-buffer
+   )
 )
 
 ;; Helm stuff
