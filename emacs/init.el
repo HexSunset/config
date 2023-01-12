@@ -90,18 +90,6 @@
   :custom (evil-collection-setup-minibuffer t)
   :init
   (evil-collection-init '(calendar dired magit ediff calc)))
-(use-package company
-  :ensure
-  :config
-  (global-company-mode 1)
-  :custom
-  (company-idle-delay 0.5)
-  :bind
-  (:map company-active-map
-	("C-n" . company-select-next)
-	("C-p" . company-select-previous)
-	("C-<" . company-select-first)
-	("C->" . company-select-last)))
 (use-package yasnippet
   :ensure
   :config
