@@ -89,7 +89,7 @@
   :ensure
   :custom (evil-collection-setup-minibuffer t)
   :init
-  (evil-collection-init '(calendar dired magit ediff calc)))
+  (evil-collection-init '(calendar dired magit ediff calc eshell)))
 (use-package yasnippet
   :ensure
   :config
@@ -115,7 +115,7 @@
    "e"  'helm-M-x
    "g"  'magit
    "c"  'calendar
-   "t"  'vterm
+   "t"  'eshell
    )
   (general-define-key
    "C-s" 'save-buffer
