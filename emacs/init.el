@@ -64,11 +64,6 @@
   :ensure
   :config
   (ido-mode 1))
-(use-package auto-complete
-  :ensure
-  :config
-  (auto-complete-mode)
-  (ac-config-default))
 (use-package evil
   :ensure
   :init
@@ -170,7 +165,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(haskell-mode vterm sudo-edit evil-surround ac-html auto-complete-auctex auto-complete auctex-cluttex auctex-latexmk auctex yasnippet general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
+   '(evil-commentary haskell-mode vterm sudo-edit evil-surround ac-html auto-complete-auctex auto-complete auctex-cluttex auctex-latexmk auctex yasnippet general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
