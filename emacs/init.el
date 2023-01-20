@@ -114,7 +114,7 @@
    "d"  'dired
    "e"  'helm-M-x
    "g"  'magit
-   "c"  'calendar
+   "c"  'compile
    "t"  'eshell
    )
   (general-define-key
