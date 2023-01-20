@@ -66,3 +66,4 @@ emacs/*
 !emacs/elisp/*
 
 emacs/ido.last
+/emacs/elpa/*.signed
