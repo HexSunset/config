@@ -93,7 +93,7 @@
   (yas-reload-all)
   (add-hook 'prog-mode-hook 'yas-minor-mode)
   (add-hook 'text-mode-hook 'yas-minor-mode)
-  (general-define-key "TAB" 'helm-yas-complete))
+  (general-define-key "C-<tab>" 'helm-yas-complete))
 (use-package kbd-mode)
 
 
