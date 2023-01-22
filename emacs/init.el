@@ -39,7 +39,7 @@
 ;; --- APPEARANCE ---
 ;; ------------------
 (set-face-attribute 'default nil :font "Hack" :height 140)
-(load-theme 'gruvbox-dark-medium t) ;; The t makes emacs not ask before loading
+(load-theme 'gruvbox-dark-hard t) ;; The t makes emacs not ask before loading
 
 
 ;; ----------------
