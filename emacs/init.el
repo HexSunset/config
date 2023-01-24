@@ -91,6 +91,11 @@
   :custom (evil-collection-setup-minibuffer t)
   :init
   (evil-collection-init '(compile calendar dired magit ediff calc eshell xref)))
+(use-package eglot
+  :ensure
+  :config
+  (setq eglot-ignored-server-capabilities '(:hoverProvider :codeLensProvider :documentLinkProvider)))
+
 (use-package kbd-mode)
 
 
