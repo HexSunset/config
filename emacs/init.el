@@ -87,7 +87,7 @@
   :ensure
   :custom (evil-collection-setup-minibuffer t)
   :init
-  (evil-collection-init '(compile calendar dired magit ediff calc eshell)))
+  (evil-collection-init '(compile calendar dired magit ediff calc eshell xref)))
 (use-package kbd-mode)
 
 
