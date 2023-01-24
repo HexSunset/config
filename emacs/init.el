@@ -91,15 +91,10 @@
 	 (c-mode . lsp))
   :commands lsp)
 (use-package lsp-ui
+(use-package which-key
   :ensure
   :config
-  (lsp-ui-mode)
-  (setq lsp-ui-sideline-enable t)
-  (setq lsp-ui-sideline-show-diagnostics t)
-  (setq lsp-ui-sideline-show-code-actions t)
-  :commands lsp-ui-mode)
-(use-package helm-lsp :commands helm-lsp-workspace-symbol)
-
+  (which-key-mode))
 (use-package evil-collection
   :ensure
   :custom (evil-collection-setup-minibuffer t)
