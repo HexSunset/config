@@ -60,10 +60,6 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(use-package ido
-  :ensure
-  :config
-  (ido-mode 1))
 (use-package evil
   :ensure
   :init
