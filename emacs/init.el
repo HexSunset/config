@@ -79,18 +79,6 @@
 (use-package company
   :config
   (global-company-mode))
-(use-package lsp-mode
-  :ensure
-  :init
-  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
-  ;;(setq lsp-keymap-prefix "C-c l")
-  :config
-  (setq lsp-rust-analyzer-server-display-inlay-hints nil)
-  :hook (
-         (rust-mode . lsp)
-	 (c-mode . lsp))
-  :commands lsp)
-(use-package lsp-ui
 (use-package which-key
   :ensure
   :config
