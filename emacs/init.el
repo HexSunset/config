@@ -91,10 +91,17 @@
   :custom (evil-collection-setup-minibuffer t)
   :init
   (evil-collection-init '(compile calendar dired magit ediff calc eshell xref)))
+<<<<<<< HEAD
 ;;(use-package eglot
 ;;  :ensure
 ;;  :config
 ;;  (setq eglot-ignored-server-capabilities '(:diagnosticProvider :hoverProvider :documentHighlightProvider :documentSymbolProvider :workspaceSymbolProvider :codeLensProvider :documentOnTypeFormattingProvider :documentLinkProvider :colorProvider)))
+=======
+(use-package eglot
+  :ensure
+  :config
+ (setq eglot-ignored-server-capabilities '(:hoverProvider :documentHighlightProvider :documentSymbolProvider :workspaceSymbolProvider :codeLensProvider :documentOnTypeFormattingProvider :documentLinkProvider :colorProvider)))
+>>>>>>> 877d7a9 ([emacs] ignore most features of eglot lol)
 
 (use-package kbd-mode)
 
@@ -169,7 +176,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(yasnippet-snippets yasnippet eglot which-key gruber-darker-theme company evil-commentary haskell-mode vterm sudo-edit evil-surround ac-html general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
+   '(yasnippet-snippets yasnippet which-key gruber-darker-theme company evil-commentary haskell-mode vterm sudo-edit evil-surround ac-html general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
