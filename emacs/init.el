@@ -74,22 +74,29 @@
 (use-package helm
   :ensure
   :config
-  (helm-mode 1)
   (helm-autoresize-mode 1))
+(use-package company
+  :config
+  (global-company-mode))
+(use-package lsp-mode
+  :ensure
+  :init
+  :config
+  (lsp-ui-mode)
+  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+  ;;(setq lsp-keymap-prefix "C-c l")
+  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+         (rust-mode . lsp)
+	 (c-mode . lsp))
+  :commands lsp)
+(use-package lsp-ui :commands lsp-ui-mode)
+(use-package helm-lsp :commands helm-lsp-workspace-symbol)
+
 (use-package evil-collection
   :ensure
   :custom (evil-collection-setup-minibuffer t)
   :init
   (evil-collection-init '(compile calendar dired magit ediff calc eshell)))
-(use-package yasnippet
-  :init
-  (setq yas-snippet-dirs '("~/.config/emacs/snippets/"))
-  :ensure
-  :config
-  (yas-reload-all)
-  (add-hook 'prog-mode-hook 'yas-minor-mode)
-  (add-hook 'text-mode-hook 'yas-minor-mode)
-  (general-define-key "C-<tab>" 'helm-yas-complete))
 (use-package kbd-mode)
 
 
