@@ -94,7 +94,7 @@
 (use-package eglot
   :ensure
   :config
-  (setq eglot-ignored-server-capabilities '(:hoverProvider :codeLensProvider :documentLinkProvider)))
+ (setq eglot-ignored-server-capabilities '(:hoverProvider :documentHighlightProvider :documentSymbolProvider :workspaceSymbolProvider :codeLensProvider :documentOnTypeFormattingProvider :documentLinkProvider :colorProvider)))
 
 (use-package kbd-mode)
 
