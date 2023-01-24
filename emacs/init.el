@@ -69,11 +69,12 @@
 (use-package evil-surround
   :ensure
   :config
-  (evil-surround-mode 1))
+  (global-evil-surround-mode))
 (use-package magit)
 (use-package helm
   :ensure
   :config
+  (helm-mode 1)
   (helm-autoresize-mode 1))
 (use-package company
   :config
