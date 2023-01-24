@@ -38,7 +38,7 @@
 ;; ------------------
 ;; --- APPEARANCE ---
 ;; ------------------
-(set-face-attribute 'default nil :font "Hack" :height 140)
+(set-face-attribute 'default nil :font "Iosevka" :height 160)
 (load-theme 'gruber-darker t) ;; The t makes emacs not ask before loading
 
 
