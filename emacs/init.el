@@ -81,7 +81,7 @@
   (global-company-mode))
 (use-package yasnippet
   :config
-  (yas-minor-mode))
+  (yas-global-mode 1))
 (use-package which-key
   :ensure
   :config
