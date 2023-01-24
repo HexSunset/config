@@ -82,15 +82,22 @@
 (use-package lsp-mode
   :ensure
   :init
-  :config
-  (lsp-ui-mode)
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
   ;;(setq lsp-keymap-prefix "C-c l")
-  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+  :config
+  (setq lsp-rust-analyzer-server-display-inlay-hints nil)
+  :hook (
          (rust-mode . lsp)
 	 (c-mode . lsp))
   :commands lsp)
-(use-package lsp-ui :commands lsp-ui-mode)
+(use-package lsp-ui
+  :ensure
+  :config
+  (lsp-ui-mode)
+  (setq lsp-ui-sideline-enable t)
+  (setq lsp-ui-sideline-show-diagnostics t)
+  (setq lsp-ui-sideline-show-code-actions t)
+  :commands lsp-ui-mode)
 (use-package helm-lsp :commands helm-lsp-workspace-symbol)
 
 (use-package evil-collection
