@@ -116,7 +116,6 @@
    "e"  'helm-M-x
    "g"  'magit
    "c"  'compile
-   "t"  'eshell
    )
   (general-define-key
    "C-s" 'save-buffer
