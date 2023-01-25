@@ -127,6 +127,7 @@
    )
   (general-define-key
    "C-s" 'save-buffer
+   "M-x" 'helm-M-x
    )
 )
 
@@ -177,6 +178,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(helm-minibuffer-history-key "M-p")
  '(package-selected-packages
    '(company-quickhelp org-bullets yasnippet which-key gruber-darker-theme company evil-commentary haskell-mode vterm sudo-edit evil-surround ac-html general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
 (custom-set-faces
