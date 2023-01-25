@@ -170,6 +170,11 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 ;; Make underscore a word character
 (modify-syntax-entry ?_ "w")
 
+;; tab width
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
+(setq tab-width 4)
+
 ;; define function to shutdown emacs server instance
 (defun kill-server ()
   "Save buffers, Quit, and Shutdown (kill) server"
