@@ -41,6 +41,18 @@
 (set-face-attribute 'default nil :font "Iosevka" :height 160)
 (load-theme 'gruber-darker t) ;; The t makes emacs not ask before loading
 
+;; ----------------
+;; --- ORG-MODE ---
+;; ----------------
+(setq org-hide-emphasis-markers t)
+(font-lock-add-keywords 'org-mode
+                        '(("^ +\\([-*]\\) "
+                           (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
+(use-package org-bullets
+  :ensure
+  :config
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+
 
 ;; ----------------
 ;; --- PACKAGES ---
