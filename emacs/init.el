@@ -44,7 +44,8 @@
 ;; ----------------
 ;; --- ORG-MODE ---
 ;; ----------------
-(setq org-hide-emphasis-markers t)
+(setq org-hide-emphasis-markers t
+      org-pretty-entities t)
 (font-lock-add-keywords 'org-mode
                         '(("^ +\\([-*+]\\) "
                            (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
