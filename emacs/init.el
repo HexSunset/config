@@ -90,9 +90,9 @@
   (helm-mode 1)
   (helm-autoresize-mode 1))
 (use-package company
+  :ensure
   :config
-  (company-begin-backend 'company-yasnippet)
-  (global-company-mode))
+  (company-mode 1))
 (use-package yasnippet
   :config
   (yas-global-mode 1))
