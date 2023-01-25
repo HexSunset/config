@@ -123,9 +123,18 @@
    "ff" 'helm-find-files     ;; Mnemonic File Find
    "d"  'dired
    "e"  'helm-M-x
-   "g"  'magit
+   "m"  'magit
    "c"  'compile
    )
+  ;; Org-mode motion commands
+  (general-define-key
+    :keymaps 'normal
+    :mode 'org
+    "gn" 'org-next-visible-heading
+    "gp" 'org-previous-visible-heading
+    "gf" 'org-forward-heading-same-level
+    "gb" 'org-backward-heading-same-level
+    )
   (general-define-key
    "C-s" 'save-buffer
    "M-x" 'helm-M-x
