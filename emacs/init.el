@@ -90,6 +90,7 @@
   (helm-autoresize-mode 1))
 (use-package company
   :config
+  (company-begin-backend 'company-yasnippet)
   (global-company-mode))
 (use-package yasnippet
   :config
@@ -177,7 +178,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(yasnippet-snippets yasnippet which-key gruber-darker-theme company evil-commentary haskell-mode vterm sudo-edit evil-surround ac-html general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
+   '(company-quickhelp org-bullets yasnippet which-key gruber-darker-theme company evil-commentary haskell-mode vterm sudo-edit evil-surround ac-html general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
