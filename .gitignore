@@ -64,6 +64,8 @@ emacs/*
 !emacs/elpa/*
 !emacs/elisp/
 !emacs/elisp/*
+!emacs/elisp/themes/
+!emacs/elisp/themes/*
 
 emacs/ido.last
 /emacs/elpa/*.signed

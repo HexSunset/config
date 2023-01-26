@@ -39,6 +39,7 @@
 ;; --- APPEARANCE ---
 ;; ------------------
 (set-face-attribute 'default nil :font "Iosevka" :height 142)
+(add-to-list 'custom-theme-load-path "~/.config/emacs/elisp/themes/")
 (load-theme 'gruber-darker t) ;; The t makes emacs not ask before loading
 
 ;; ----------------
@@ -49,10 +50,6 @@
 (font-lock-add-keywords 'org-mode
                         '(("^ +\\([-*+]\\) "
                            (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
-(use-package org-bullets
-  :ensure
-  :config
-  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
 
 ;; ----------------
@@ -198,4 +195,11 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  ;; If there is more than one, they won't work right.
  '(helm-minibuffer-history-key "M-p")
  '(package-selected-packages
-   '(company-quickhelp org-bullets yasnippet which-key gruber-darker-theme company evil-commentary haskell-mode vterm sudo-edit evil-surround ac-html general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async)))
+   '(rainbow-mode company-quickhelp org-bullets yasnippet which-key company evil-commentary haskell-mode vterm sudo-edit evil-surround ac-html general evil-collection evil-leader systemd markdown-mode helm use-package smex rust-mode popup magit gruvbox-theme evil async))
+ '(safe-local-variable-values '((eval when (fboundp 'rainbow-mode) (rainbow-mode 1)))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
