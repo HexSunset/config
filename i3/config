@@ -41,6 +41,9 @@ exec --no-startup-id xss-lock i3lock -c 000000 --nofork
 # Chinese input
 exec --no-startup-id fcitx5 -d
 
+# Hide mouse pointer after 10 second inactivity
+exec hhpc -i 10
+
 # Enable touchpad tap to click
 exec xinput set-prop "MSFT0001:00 06CB:CE2D Touchpad" "libinput Tapping Enabled" 1
 
