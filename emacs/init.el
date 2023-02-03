@@ -38,7 +38,7 @@
 ;; ------------------
 ;; --- APPEARANCE ---
 ;; ------------------
-(set-face-attribute 'default nil :font "Iosevka" :height 142)
+(set-face-attribute 'default nil :font "Iosevka" :height 160)
 (add-to-list 'custom-theme-load-path "~/.config/emacs/elisp/themes/")
 (load-theme 'gruber-darker t) ;; The t makes emacs not ask before loading
 
