@@ -13,6 +13,8 @@ set $mod Mod4
 set $Terminal kitty
 set $Editor emacsclient -c -a emacs
 
+set $TimeStamp $(date +%F_%H%M%S)
+
 # Font for window titles. Will also be used by the bar unless a different font
 font pango:terminus 8
 
@@ -211,14 +213,14 @@ bindsym $mod+Shift+r restart
 # Exit dialogue
 bindsym $mod+Shift+e exec --no-startup-id rofi -show menu -modi menu:$HOME/.config/rofi/rofi-power-menu
 
-# Multi-screen screenshots with scrot
-bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
+# Desktop screenshot
+bindsym --release Print exec maim | tee ~/Pictures/screenshots/$TimeStamp.png | xclip -selection clipboard -t image/png
 
 # Active window screenshot
-bindsym --release $mod+Print exec scrot -u 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
+bindsym --release Shift+Print exec maim -i $(xdotool getactivewindow) | tee ~/Pictures/screenshots/$(date +%F_%H%M%S).png | xclip -selection clipboard -t image/png
 
 # OSX-like area selection screenshots
-bindsym --release $mod+Shift+s exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # Area selection
+bindsym --release $mod+Shift+s exec maim -D -s | tee ~/Pictures/screenshots/$(date +%F_%H%M%S).png | xclip -selection clipboard -t image/png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
