@@ -37,11 +37,6 @@
 (set-face-attribute 'default nil :font "Iosevka" :height 160)
 
 ;; ----------------
-;; --- KEYBINDS ---
-;; ----------------
-(global-set-key [remap dabbrev-expand] 'hippie-expand)
-
-;; ----------------
 ;; --- ORG-MODE ---
 ;; ----------------
 (setq org-hide-emphasis-markers t
@@ -68,6 +63,12 @@
   (package-install 'use-package))
 
 (use-package magit)
+(use-package company
+  :ensure
+  :config
+  (company-mode 1)
+  (global-company-mode)
+  )
 (use-package yasnippet
   :config
   (yas-global-mode 1))
@@ -101,7 +102,7 @@
  ;; If there is more than one, they won't work right.
  '(helm-minibuffer-history-key "M-p")
  '(package-selected-packages
-   '(imenu-anywhere rainbow-mode company-quickhelp org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit gruvbox-theme async)))
+   '(rainbow-mode company-quickhelp org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit gruvbox-theme async)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
