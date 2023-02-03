@@ -313,9 +313,8 @@
    `(org-upcoming-deadline ((t (:foreground ,gruber-darker-yellow))))
    `(org-hide ((t (:foreground ,gruber-darker-bg))))
    `(org-level-1 ((t (:foreground ,gruber-darker-yellow :relative-height 2.0))))
-   `(org-level-2 ((t (:foreground ,gruber-darker-brown :relative-height 1.75))))
-   `(org-level-3 ((t (:foreground ,gruber-darker-niagara :relative-height 1.5))))
-   `(org-level-4 ((t (:foreground ,gruber-darker-fg :relative-height 1.25))))
+   `(org-level-2 ((t (:foreground ,gruber-darker-niagara :relative-height 1.75))))
+   `(org-level-3 ((t (:foreground ,gruber-darker-brown :relative-height 1.5))))
 
    ;; Search
    `(isearch ((t ,(list :foreground gruber-darker-black
