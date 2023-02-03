@@ -76,6 +76,10 @@
   :ensure
   :config
   (which-key-mode))
+(use-package ido
+  :ensure
+  :config
+  (ido-everywhere))
 
 
 ;; ----------------------
