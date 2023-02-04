@@ -79,7 +79,14 @@
 (use-package ido
   :ensure
   :config
-  (ido-everywhere))
+  (setq ido-create-new-buffer 'always)
+  (setq ido-enable-flex-matching t)
+  (setq ido-everywhere t)
+  (ido-mode 1))
+(use-package smex
+  :ensure
+  :config
+  (global-set-key (kbd "M-x") 'smex))
 
 
 ;; ----------------------
