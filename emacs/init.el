@@ -16,6 +16,7 @@
 (setq inhibit-startup-message t)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+(menu-bar-mode -1)
 (setq inhibit-startup-echo-area-message t)
 (setq initial-buffer-choice nil)
 (setq frame-title-format nil)
