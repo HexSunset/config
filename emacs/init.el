@@ -26,8 +26,6 @@
 (setq cursor-in-non-selected-windows nil)
 (setq completion-styles '(basic substring))
 
-(setq display-line-numbers-type 'relative)
-(global-display-line-numbers-mode)
 
 
 ;; ------------------
@@ -36,6 +34,9 @@
 (add-to-list 'custom-theme-load-path "~/.config/emacs/elisp/themes/")
 (load-theme 'gruber-darker t) ;; The t makes emacs not ask before loading
 (set-face-attribute 'default nil :font "Iosevka" :height 160)
+;; Line numbers
+(setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode)
 
 ;; ----------------
 ;; --- ORG-MODE ---
