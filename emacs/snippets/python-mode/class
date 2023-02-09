@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: class definition
+# key: class
+# --
+class ${1:Class name}:
+    def __init__(self, $2):
+        $0
