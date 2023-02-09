@@ -1,3 +1,3 @@
-# key: timestamp
+# key: tstamp
 # --
 `(current-time-string)`
