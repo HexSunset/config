@@ -101,6 +101,8 @@
 ;; --- OTHER SETTINGS ---
 ;; ----------------------
 
+(global-set-key (kbd "M-o") 'other-window)
+
 ;; tab width
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
