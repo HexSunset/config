@@ -67,8 +67,8 @@ emacs/*
 !emacs/elisp/themes/
 !emacs/elisp/themes/*
 !emacs/snippets/
-!emacs/snippets/text-mode/
-!emacs/snippets/text-mode/*
+!emacs/snippets/fundamental-mode/
+!emacs/snippets/fundamental-mode/*
 !emacs/snippets/python-mode/
 !emacs/snippets/python-mode/*
 
