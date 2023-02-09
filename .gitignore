@@ -66,6 +66,11 @@ emacs/*
 !emacs/elisp/*
 !emacs/elisp/themes/
 !emacs/elisp/themes/*
+!emacs/snippets/
+!emacs/snippets/text-mode/
+!emacs/snippets/text-mode/*
+!emacs/snippets/python-mode/
+!emacs/snippets/python-mode/*
 
 emacs/ido.last
 /emacs/elpa/*.signed
