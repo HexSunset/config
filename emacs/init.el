@@ -73,7 +73,11 @@
   )
 (use-package yasnippet
   :config
-  (yas-global-mode 1))
+  (yas-global-mode 1)
+  (setq yas-snippet-dirs
+        '("~/.config/emacs/snippets/"))
+  (global-set-key (kbd "C-c SPC") 'yas-expand)
+  (global-set-key (kbd "C-c TAB") 'yas-insert-snippet))
 (use-package which-key
   :ensure
   :config
