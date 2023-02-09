@@ -64,6 +64,8 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
+(electric-pair-mode)
+
 (use-package magit)
 (use-package company
   :ensure
