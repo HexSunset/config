@@ -214,13 +214,13 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec --no-startup-id rofi -show menu -modi menu:$HOME/.config/rofi/rofi-power-menu
 
 # Desktop screenshot
-bindsym --release Print exec maim | tee ~/Pictures/screenshots/$TimeStamp.png | xclip -selection clipboard -t image/png
+bindsym --release Print exec maim -u | tee ~/Pictures/screenshots/$TimeStamp.png | xclip -selection clipboard -t image/png
 
 # Active window screenshot
-bindsym --release Shift+Print exec maim -i $(xdotool getactivewindow) | tee ~/Pictures/screenshots/$(date +%F_%H%M%S).png | xclip -selection clipboard -t image/png
+bindsym --release Shift+Print exec maim -u -i $(xdotool getactivewindow) | tee ~/Pictures/screenshots/$(date +%F_%H%M%S).png | xclip -selection clipboard -t image/png
 
 # OSX-like area selection screenshots
-bindsym --release $mod+Shift+s exec maim -D -s | tee ~/Pictures/screenshots/$(date +%F_%H%M%S).png | xclip -selection clipboard -t image/png
+bindsym --release $mod+Shift+s exec maim -u -D -s | tee ~/Pictures/screenshots/$(date +%F_%H%M%S).png | xclip -selection clipboard -t image/png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
