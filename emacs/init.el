@@ -100,9 +100,8 @@
 
 (global-set-key (kbd "M-o") 'other-window)
 
-;; tab width
-(setq-default tab-width 4)
-(setq-default indent-tabs-mode nil)
+;; indentation
+(setq indent-tabs-mode nil)
 (setq tab-width 4)
 
 ;; Make OS clipboard work
