@@ -66,6 +66,7 @@
   (package-install 'use-package))
 
 (electric-pair-mode)
+(global-visual-line-mode)
 
 (use-package magit)
 (use-package company
