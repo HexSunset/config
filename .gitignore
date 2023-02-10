@@ -68,8 +68,11 @@ emacs/*
 !emacs/elisp/themes/*
 !emacs/snippets/
 !emacs/snippets/fundamental-mode/
+!emacs/snippets/fundamental-mode/*
 !emacs/snippets/python-mode/
+!emacs/snippets/python-mode/*
 !emacs/snippets/rust-mode/
+!emacs/snippets/rust-mode/*
 
 emacs/ido.last
 /emacs/elpa/*.signed
