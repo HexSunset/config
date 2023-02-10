@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: impl trait
+# key: impt
+# --
+impl ${1:Trait} for ${2:Struct} {
+    $0 
+}
