@@ -13,7 +13,7 @@
 ;; -----------------
 
 ;; Disable unwanted things
-(setq inhibit-startup-message t)
+(setq inhibit-startup-screen t)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
@@ -24,7 +24,7 @@
 (setq use-dialog-box nil)
 (setq indicate-empty-lines nil)
 (setq cursor-in-non-selected-windows nil)
-(setq completion-styles '(basic substring))
+(setq completion-styles '(basic substring partial-completion emacs22))
 
 
 ;; ------------------
