@@ -27,7 +27,6 @@
 (setq completion-styles '(basic substring))
 
 
-
 ;; ------------------
 ;; --- APPEARANCE ---
 ;; ------------------
@@ -70,7 +69,6 @@
 
 (use-package magit)
 (use-package company
-  :ensure
   :config
   (company-mode 1)
   (global-company-mode)
@@ -83,18 +81,15 @@
   (global-set-key (kbd "C-c SPC") 'yas-expand)
   (global-set-key (kbd "C-c TAB") 'yas-insert-snippet))
 (use-package which-key
-  :ensure
   :config
   (which-key-mode))
 (use-package ido
-  :ensure
   :config
   (setq ido-create-new-buffer 'always)
   (setq ido-enable-flex-matching t)
   (setq ido-everywhere t)
   (ido-mode 1))
 (use-package smex
-  :ensure
   :config
   (global-set-key (kbd "M-x") 'smex))
 
@@ -125,10 +120,10 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    '(rainbow-mode org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit gruvbox-theme async)))
+(put 'dired-find-alternate-file 'disabled nil)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :extend nil :stipple nil :background "#181818" :foreground "#e4e4ef" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 162 :width normal :foundry "UKWN" :family "Iosevka")))))
-(put 'dired-find-alternate-file 'disabled nil)
+ )
