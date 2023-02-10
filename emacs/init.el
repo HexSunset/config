@@ -37,6 +37,8 @@
 ;; Line numbers
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode)
+(menu-bar--display-line-numbers-mode-visual)
+
 
 ;; ----------------
 ;; --- ORG-MODE ---
