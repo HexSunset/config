@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: fn with return type
-# key: fnr
-# --
-fn ${1:function}(${2:arg}) -> ${3:type} {
-    $0
-}

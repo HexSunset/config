@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: New String
-# key: S
-# --
-String::new($0)
