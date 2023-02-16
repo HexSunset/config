@@ -122,11 +122,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(auctex zig-mode rainbow-mode org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit gruvbox-theme async)))
+   '(paredit god-mode undo-tree tree-sitter racket-mode auctex zig-mode rainbow-mode org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit gruvbox-theme async)))
 (put 'dired-find-alternate-file 'disabled nil)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(fixed-pitch ((t (:family "Iosevka"))))
+ '(fixed-pitch-serif ((t (:family "Iosevka"))))
+ '(variable-pitch ((t (:family "Monaco")))))
