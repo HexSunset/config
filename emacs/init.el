@@ -136,4 +136,4 @@
  ;; If there is more than one, they won't work right.
  '(fixed-pitch ((t (:family "Iosevka"))))
  '(fixed-pitch-serif ((t (:family "Iosevka"))))
- '(variable-pitch ((t (:family "Monaco")))))
+ '(variable-pitch ((t (:family "IBM Plex Sans")))))
