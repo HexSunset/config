@@ -25,7 +25,7 @@ new_float normal
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec xrandr --output HDMI-0 --primary
-exec xrandr --output DVI-D-0 --right-of HDMI-0
+exec xrandr --output DVI-D-0 --right-of HDMI-0 --size 1680x1050
 exec --no-startup-id dex --autostart --environment i3
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
