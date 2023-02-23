@@ -90,11 +90,6 @@
   (setq ido-enable-flex-matching t)
   (setq ido-everywhere t)
   (ido-mode 1))
-(use-package god-mode
-  :config
-  (setq god-exempt-major-modes nil)
-  (setq god-exempt-predicates nil)
-  (global-set-key (kbd "<escape>") 'god-local-mode))
 (use-package smex
   :config
   (global-set-key (kbd "M-x") 'smex))
