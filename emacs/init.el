@@ -72,8 +72,7 @@
 (use-package company
   :config
   (company-mode 1)
-  (global-company-mode)
-  )
+  (global-company-mode))
 (use-package yasnippet
   :config
   (yas-global-mode 1)
