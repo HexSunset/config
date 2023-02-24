@@ -31,6 +31,23 @@
 ;; --- CUSTOM FUNCTIONS ---
 ;; ------------------------
 
+;; multi-occur
+(defun get-buffers-matching-mode (mode)
+  "Returns a list of buffers where their major-mode is equal to MODE"
+  (let ((buffer-mode-matches '()))
+    (dolist (buf (buffer-list))
+      (with-current-buffer buf
+        (when (eq mode major-mode)
+          (push buf buffer-mode-matches))))
+    buffer-mode-matches))
+
+(defun multi-occur-in-this-mode ()
+  "Show all lines matching REGEXP in buffers with this major mode."
+  (interactive)
+  (multi-occur
+   (get-buffers-matching-mode major-mode)
+   (car (occur-read-primary-args))))
+
 ;; recent files
 (defun ido-recentf-open ()
   "Use `ido-completing-read' to \\[find-file] a recent file"
@@ -139,9 +156,10 @@
 ;; shell
 (global-set-key (kbd "<f1>") 'shell)
 
-;; grep
+;; find
 (setq grep-find-command "find . -type f -exec rg --color=auto -nH --null -e")
 (global-set-key (kbd "<f2>") 'rgrep)
+(global-set-key (kbd "C-<f2>") 'multi-occur-in-this-mode)
 
 ;; revert buffer
 (global-set-key (kbd "<f6>") 'revert-this-buffer)
