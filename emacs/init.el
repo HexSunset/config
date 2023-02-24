@@ -119,6 +119,7 @@
 (global-visual-line-mode)
 
 (use-package magit)
+(use-package dired-x)
 (use-package yasnippet
   :config
   (yas-global-mode 1)
@@ -141,6 +142,9 @@
   (recentf-mode t)
   :bind
   ("C-x C-r" . 'ido-recentf-open))
+(use-package find-dired
+  :config
+  (setq find-ls-option '("-exec ls -ldh {} +" . "-ldh")))
 (use-package smex
   :bind
   ("M-x" . 'smex))
