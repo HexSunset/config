@@ -153,6 +153,9 @@
 ;; kill current buffer
 (global-set-key (kbd "C-x C-k") 'kill-current-buffer)
 
+;; ibuffer
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
 ;; shell
 (global-set-key (kbd "<f1>") 'shell)
 
