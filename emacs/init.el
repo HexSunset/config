@@ -101,8 +101,9 @@
   (yas-global-mode 1)
   (setq yas-snippet-dirs
         '("~/.config/emacs/snippets/"))
-  (global-set-key (kbd "C-c SPC") 'yas-expand)
-  (global-set-key (kbd "C-c TAB") 'yas-insert-snippet))
+  :bind
+  ("C-c SPC" . yas-expand)
+  ("C-c TAB" . yas-insert-snippet))
 (use-package which-key
   :config
   (which-key-mode))
@@ -114,11 +115,12 @@
   (ido-mode 1))
 (use-package recentf
   :config
-  (global-set-key (kbd "C-x C-r") 'ido-recentf-open)
-  (recentf-mode t))
+  (recentf-mode t)
+  :bind
+  ("C-x C-r" . 'ido-recentf-open))
 (use-package smex
-  :config
-  (global-set-key (kbd "M-x") 'smex))
+  :bind
+  ("M-x" . 'smex))
 
 
 ;; ----------------
