@@ -27,6 +27,17 @@
 (setq completion-styles '(basic substring partial-completion emacs22))
 
 
+;; ------------------------
+;; --- CUSTOM FUNCTIONS ---
+;; ------------------------
+(defun ido-recentf-open ()
+  "Use `ido-completing-read' to \\[find-file] a recent file"
+  (interactive)
+  (if (find-file (ido-completing-read "Find recent file: " recentf-list))
+      (message "Opening file...")
+    (message "Aborting")))
+
+
 ;; ------------------
 ;; --- APPEARANCE ---
 ;; ------------------
@@ -85,6 +96,10 @@
   (setq ido-enable-flex-matching t)
   (setq ido-everywhere t)
   (ido-mode 1))
+(use-package recentf
+  :config
+  (global-set-key (kbd "C-x C-r") 'ido-recentf-open)
+  (recentf-mode t))
 (use-package smex
   :config
   (global-set-key (kbd "M-x") 'smex))
