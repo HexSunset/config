@@ -119,6 +119,18 @@
   (global-set-key (kbd "M-x") 'smex))
 
 
+;; ----------------
+;; --- KEYBINDS ---
+;; ----------------
+
+;; other-window
+(global-set-key (kbd "M-o") 'other-window)
+
+;; set mark without selection
+(global-set-key (kbd "C-`") 'push-mark-no-activate)
+(global-set-key (kbd "M-`") 'jump-to-mark)
+
+
 ;; ----------------------
 ;; --- OTHER SETTINGS ---
 ;; ----------------------
@@ -128,8 +140,6 @@
 
 ;; C-n inserts newline at end of buffer
 (setq next-line-add-newlines t)
-
-(global-set-key (kbd "M-o") 'other-window)
 
 ;; indentation
 (setq indent-tabs-mode nil)
