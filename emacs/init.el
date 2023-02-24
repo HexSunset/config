@@ -171,9 +171,6 @@
 ;; revert buffer
 (global-set-key (kbd "<f6>") 'revert-this-buffer)
 
-;; magit
-(global-set-key (kbd "<f7>") 'magit-status)
-
 ;; other-window
 (global-set-key (kbd "M-o") 'other-window)
 
