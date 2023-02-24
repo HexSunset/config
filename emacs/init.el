@@ -140,6 +140,7 @@
 (global-set-key (kbd "<f1>") 'shell)
 
 ;; grep
+(setq grep-find-command "find . -type f -exec rg --color=auto -nH --null -e")
 (global-set-key (kbd "<f2>") 'rgrep)
 
 ;; revert buffer
