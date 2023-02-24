@@ -53,6 +53,12 @@
   (interactive)
   (set-mark-command 1))
 
+;; reload file from disk
+(defun revert-this-buffer ()
+  (interactive)
+  (revert-buffer nil t t)
+  (message (concat "Reverted buffer " (buffer-name))))
+
 
 ;; ------------------
 ;; --- APPEARANCE ---
@@ -126,6 +132,18 @@
 ;; ----------------
 ;; --- KEYBINDS ---
 ;; ----------------
+
+;; kill current buffer
+(global-set-key (kbd "C-x C-k") 'kill-current-buffer)
+
+;; shell
+(global-set-key (kbd "<f1>") 'shell)
+
+;; grep
+(global-set-key (kbd "<f2>") 'rgrep)
+
+;; revert buffer
+(global-set-key (kbd "<f6>") 'revert-this-buffer)
 
 ;; other-window
 (global-set-key (kbd "M-o") 'other-window)
