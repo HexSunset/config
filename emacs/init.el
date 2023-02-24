@@ -101,6 +101,9 @@
 ;; compilation buffer
 (setq compilation-scroll-output t)
 
+;; C-n inserts newline at end of buffer
+(setq next-line-add-newlines t)
+
 (global-set-key (kbd "M-o") 'other-window)
 
 ;; indentation
