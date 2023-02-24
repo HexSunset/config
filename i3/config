@@ -246,9 +246,4 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Launch bar
-bar {
-    mode hide
-    modifier $mod
-    status_command i3status
-}
-#exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
