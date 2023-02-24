@@ -157,7 +157,7 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; shell
-(global-set-key (kbd "<f1>") 'shell)
+(global-set-key (kbd "<f1>") 'eshell)
 
 ;; find
 (setq grep-find-command "find . -type f -exec rg --color=auto -nH --null -e")
