@@ -30,6 +30,8 @@
 ;; ------------------------
 ;; --- CUSTOM FUNCTIONS ---
 ;; ------------------------
+
+;; recent files
 (defun ido-recentf-open ()
   "Use `ido-completing-read' to \\[find-file] a recent file"
   (interactive)
