@@ -188,7 +188,7 @@
 (setq compilation-scroll-output t)
 
 ;; C-n inserts newline at end of buffer
-(setq next-line-add-newlines t)
+;;(setq next-line-add-newlines t)
 
 ;; indentation
 (setq indent-tabs-mode nil)
