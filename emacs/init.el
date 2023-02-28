@@ -185,7 +185,7 @@
 ;; ----------------------
 
 ;; compilation buffer
-(setq compilation-scroll-output t)
+(setq compilation-scroll-output nil)
 
 ;; C-n inserts newline at end of buffer
 ;;(setq next-line-add-newlines t)
