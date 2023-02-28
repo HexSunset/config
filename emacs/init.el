@@ -122,10 +122,10 @@
 (use-package magit)
 (use-package dired-x)
 (use-package yasnippet
-  :config
-  (yas-global-mode 1)
+  :init
   (setq yas-snippet-dirs
         '("~/.config/emacs/snippets/"))
+  (yas-global-mode 1)
   :bind
   ("C-c SPC" . yas-expand)
   ("C-c TAB" . yas-insert-snippet))
