@@ -117,7 +117,7 @@
   (package-install 'use-package))
 
 (electric-pair-mode)
-(global-visual-line-mode)
+;;(global-visual-line-mode)
 
 (use-package magit)
 (use-package dired-x)
