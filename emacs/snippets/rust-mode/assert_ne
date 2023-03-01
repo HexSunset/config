@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: assert_ne
+# key: assne
+# --
+assert_ne!($1, $2)
