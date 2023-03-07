@@ -149,6 +149,9 @@
 (use-package smex
   :bind
   ("M-x" . 'smex))
+(use-package eat
+  :bind
+  ("<f1>" . 'eat))
 
 
 ;; ----------------
@@ -160,9 +163,6 @@
 
 ;; ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-
-;; shell
-(global-set-key (kbd "<f1>") 'ansi-term)
 
 ;; find
 (setq grep-find-command "find . -type f -exec rg --color=auto -nH --null -e")
@@ -208,7 +208,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(paredit undo-tree tree-sitter racket-mode auctex zig-mode rainbow-mode org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit async)))
+   '(eat paredit undo-tree tree-sitter racket-mode auctex zig-mode rainbow-mode org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit async)))
 (put 'dired-find-alternate-file 'disabled nil)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
