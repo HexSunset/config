@@ -82,7 +82,7 @@
 ;; ------------------
 (add-to-list 'custom-theme-load-path "~/.config/emacs/elisp/themes/")
 (load-theme 'gruber-darker t) ;; The t makes emacs not ask before loading
-(set-face-attribute 'default nil :font "Iosevka Fixed Slab" :height 160)
+(set-face-attribute 'default nil :font "Iosevka Fixed Slab" :height 180)
 
 ;; Line numbers
 (setq display-line-numbers-type 'relative)
