@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: eprint
+# key: ep
+# --
+eprint!("$0");
