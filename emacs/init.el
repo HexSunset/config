@@ -173,7 +173,7 @@
 (global-set-key (kbd "<f6>") 'revert-this-buffer)
 
 ;; compile
-(global-set-key (kbd "S-<f5>") 'compile)
+(global-set-key (kbd "C-<f5>") 'compile)
 (global-set-key (kbd "<f5>") 'recompile)
 
 ;; other-window
