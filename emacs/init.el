@@ -81,7 +81,10 @@
 ;; --- APPEARANCE ---
 ;; ------------------
 (add-to-list 'custom-theme-load-path "~/.config/emacs/elisp/themes/")
-(load-theme 'gruber-darker t) ;; The t makes emacs not ask before loading
+;; The t makes emacs not ask before loading
+(load-theme 'modus-vivendi t)
+;; swap light and dark mode
+(global-set-key (kbd "<f12>") 'modus-themes-toggle)
 (set-face-attribute 'default nil :font "Iosevka Fixed Slab" :height 180)
 
 ;; Line numbers
@@ -211,8 +214,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("eb7cd622a0916358a6ef6305e661c6abfad4decb4a7c12e73d6df871b8a195f8" default))
  '(package-selected-packages
-   '(eat paredit undo-tree tree-sitter racket-mode auctex zig-mode rainbow-mode org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit async)))
+   '(modus-themes eat paredit undo-tree tree-sitter racket-mode auctex zig-mode rainbow-mode org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit async)))
 (put 'dired-find-alternate-file 'disabled nil)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
