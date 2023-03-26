@@ -120,6 +120,7 @@
   (package-install 'use-package))
 
 (electric-pair-mode)
+(global-auto-revert-mode)
 ;;(global-visual-line-mode)
 
 (use-package magit)
@@ -173,7 +174,7 @@
 (global-set-key (kbd "C-<f2>") 'multi-occur-in-this-mode)
 
 ;; revert buffer
-(global-set-key (kbd "<f6>") 'revert-this-buffer)
+;;(global-set-key (kbd "<f6>") 'revert-this-buffer)
 
 ;; compile
 (global-set-key (kbd "C-<f5>") 'compile)
