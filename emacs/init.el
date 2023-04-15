@@ -203,6 +203,7 @@
 
 ;; indentation
 (setq indent-tabs-mode nil)
+(setq align-to-tab-stop nil)
 (setq tab-width 4)
 
 ;; Make OS clipboard work
