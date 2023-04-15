@@ -82,7 +82,7 @@
 ;; ------------------
 (add-to-list 'custom-theme-load-path "~/.config/emacs/elisp/themes/")
 ;; The t makes emacs not ask before loading
-(load-theme 'modus-vivendi-tinted t)
+(load-theme 'gruber-darker t)
 ;; swap light and dark mode
 (setq modus-themes-to-toggle '(modus-operandi-tinted modus-vivendi-tinted))
 (global-set-key (kbd "<f12>") 'modus-themes-toggle)
