@@ -124,6 +124,8 @@
 (global-auto-revert-mode)
 ;;(global-visual-line-mode)
 
+(setq dired-listing-switches "-alh")
+
 (use-package magit)
 (use-package dired-x)
 (use-package yasnippet
