@@ -193,6 +193,12 @@
 (global-set-key (kbd "C-`") 'push-mark-no-activate)
 (global-set-key (kbd "M-`") 'jump-to-mark)
 
+;; Company mode
+(global-set-key (kbd "C-<tab>") 'company-complete)
+
+;; Eglot
+(define-key eglot-mode-map (kbd "C-c e r") #'eglot-rename)
+
 
 ;; ----------------------
 ;; --- OTHER SETTINGS ---
