@@ -201,6 +201,7 @@
 
 ;; Eglot
 (define-key eglot-mode-map (kbd "C-c e r") #'eglot-rename)
+(define-key eglot-mode-map (kbd "C-c d") #'eldoc-doc-buffer)
 
 
 ;; ----------------------
