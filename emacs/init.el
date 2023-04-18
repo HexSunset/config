@@ -159,6 +159,9 @@
 (use-package eat
   :bind
   ("<f1>" . 'eat))
+(use-package eglot
+  :init
+  (global-company-mode))
 
 
 ;; ----------------
