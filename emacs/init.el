@@ -159,9 +159,12 @@
 (use-package eat
   :bind
   ("<f1>" . 'eat))
-(use-package eglot
+(use-package company
   :init
+  (setq company-idle-delay nil) ;; "disables idle completion"
+  :config
   (global-company-mode))
+(use-package eglot)
 
 
 ;; ----------------
