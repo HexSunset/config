@@ -97,12 +97,11 @@
 ;; ----------------
 ;; --- ORG-MODE ---
 ;; ----------------
-(setq org-hide-emphasis-markers t
-      org-pretty-entities t)
-(setq org-startup-folded t)
-(font-lock-add-keywords 'org-mode
-                        '(("^ +\\([-*+]\\) "
-                           (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
+;;(setq org-hide-emphasis-markers t)
+
+;;(font-lock-add-keywords 'org-mode
+;;                        '(("^ +\\([-*+]\\) "
+;;                           (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
 
 
 ;; ----------------
@@ -235,7 +234,7 @@
  '(custom-safe-themes
    '("d395c1793e0d64797d711c870571a0033174ca321ed48444efbe640bf692bf4f" default))
  '(package-selected-packages
-   '(modus-themes eat paredit undo-tree tree-sitter racket-mode auctex zig-mode rainbow-mode org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit async)))
+   '(ein modus-themes eat paredit undo-tree tree-sitter racket-mode auctex zig-mode rainbow-mode org-bullets yasnippet which-key company haskell-mode vterm sudo-edit ac-html systemd markdown-mode use-package smex rust-mode popup magit async)))
 (put 'dired-find-alternate-file 'disabled nil)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
