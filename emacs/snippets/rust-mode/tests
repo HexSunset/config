@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: tests
-# key: tests
-# --
-mod tests {
-    $0
-}
