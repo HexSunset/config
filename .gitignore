@@ -75,6 +75,8 @@ emacs/*
 !emacs/snippets/rust-mode/*
 !emacs/snippets/emacs-lisp-mode/
 !emacs/snippets/emacs-lisp-mode/*
+!emacs/settings/
+!emacs/settings/*
 
 emacs/ido.last
-/emacs/elpa/*.signed
+emacs/elpa/*.signed
