@@ -3,8 +3,8 @@
 
 (put 'dired-find-alternate-file 'disabled nil)
 
-;; Backups only in ~/.config/emacs/backups/ folder
-(setq backup-directory-alist (("." . (expand-file-name "backups" user-emacs-directory))))
+;; No more backups
+(setq make-backup-files nil)
 
 
 (provide 'au-settings)
