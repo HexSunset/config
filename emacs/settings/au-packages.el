@@ -5,8 +5,13 @@
 	     '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (require 'smex)
+
+(require 'ido)
 (ido-everywhere)
+
 (require 'magit)
+
+(require 'eglot)
 
 
 (provide 'au-packages)
