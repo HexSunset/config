@@ -1,6 +1,7 @@
 ;; -*- lexical-binding: t; -*-
 
 (set-face-attribute 'default nil :font "Iosevka Fixed Slab 16")
+(set-face-attribute 'fixed-pitch nil :font "Iosevka Fixed 16")
 
 (require 'gruber-darker-theme)
 (load-theme 'gruber-darker t)
