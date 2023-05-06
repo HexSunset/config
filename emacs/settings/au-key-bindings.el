@@ -12,5 +12,7 @@
 (global-set-key (kbd "C-x C-k") 'kill-current-buffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+(global-set-key (kbd "C-<tab>") 'company-complete)
+
 
 (provide 'au-key-bindings)

@@ -9,6 +9,9 @@
 (require 'which-key)
 (which-key-mode)
 
+(require 'company)
+(global-company-mode)
+
 (require 'ido)
 (ido-everywhere)
 
