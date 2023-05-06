@@ -6,5 +6,8 @@
 ;; No more backups
 (setq make-backup-files nil)
 
+;; Visual line mode everywhere
+(global-visual-line-mode)
+
 
 (provide 'au-settings)
