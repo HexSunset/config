@@ -6,6 +6,9 @@
 
 (require 'smex)
 
+(require 'which-key)
+(which-key-mode)
+
 (require 'ido)
 (ido-everywhere)
 
