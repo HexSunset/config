@@ -19,5 +19,7 @@
 
 (require 'eglot)
 
+(save-place-mode 1)
+
 
 (provide 'au-packages)
