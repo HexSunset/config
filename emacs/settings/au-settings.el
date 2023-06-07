@@ -9,5 +9,8 @@
 ;; No more backups
 (setq make-backup-files nil)
 
+;; Revert Dired and other buffers
+(setq global-auto-revert-non-file-buffers t)
+
 
 (provide 'au-settings)
