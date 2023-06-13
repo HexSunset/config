@@ -11,7 +11,7 @@
 
 set $mod Mod4
 set $Terminal kitty
-set $Editor emacs
+set $Editor emacsclient -c -a ""
 
 set $TimeStamp $(date +%F_%H%M%S)
 
@@ -27,6 +27,9 @@ new_float normal
 exec xrandr --output HDMI-0 --primary
 exec xrandr --output DVI-D-0 --right-of HDMI-0 --size 1680x1050
 exec --no-startup-id dex --autostart --environment i3
+
+# Start emacs server
+exec emacs --daemon
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
