@@ -18,7 +18,8 @@
 
 ;; --- Appearance
 (add-to-list 'default-frame-alist
-	     '(font . "Iosevka Fixed Slab-16"))
+             '(font . "Iosevka Fixed Slab-16")
+	     '(tab-width . 4))
 
 (require 'gruber-darker-theme)
 (load-theme 'gruber-darker t)
@@ -32,7 +33,7 @@
 ;; --- Packages
 (require 'package)
 (add-to-list 'package-archives
-	     '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+		 '("melpa" . "https://melpa.org/packages/") t)
 
 (require 'smex)
 (require 'which-key)
@@ -40,6 +41,10 @@
 (require 'ido)
 (require 'magit)
 (require 'eglot)
+
+
+;; --- Hooks
+(add-hook 'dired-load-hook (function (lambda () (load "dired-x"))))
 
 
 ;; --- Variables
