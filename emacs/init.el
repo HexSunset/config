@@ -55,6 +55,9 @@
 ;; Revert Dired and other non-file buffers
 (setq global-auto-revert-non-file-buffers t)
 
+;; Enable `a` keybind in dired
+(put 'dired-find-alternate-file 'disabled nil)
+
 
 ;; --- Minor modes
 (which-key-mode)
