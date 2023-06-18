@@ -28,8 +28,6 @@
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode 1)
 
-(setq tab-width 4)
-
 
 ;; --- Packages
 (require 'package)
