@@ -17,6 +17,7 @@
 
 
 ;; --- Appearance
+;; we change default-frame-alist so that the appearance gets used by all spawned frames
 (add-to-list 'default-frame-alist
              '(font . "Iosevka Fixed Slab-16")
 	     '(tab-width . 4))
