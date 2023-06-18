@@ -69,6 +69,8 @@
 ;; --- Keybinds
 (global-set-key (kbd "M-o") 'other-window)
 
+(global-set-key (kbd "C-x c") 'compile)
+
 (global-set-key (kbd "M-x") 'smex)
 
 (global-set-key (kbd "C-x C-f") 'ido-find-file)
